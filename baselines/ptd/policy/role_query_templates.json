@@ -1,0 +1,256 @@
+{
+  "protocol_id": "Role-STVG-PTD-64f-v2",
+  "adapter_rule": "strip one terminal period from the frozen role definition and lowercase only its first character",
+  "native_prompt_wrapper": "Given the query: '{query}' Localize the described object throughout the video. Use object reference tokens, time tokens, and box tokens. Return the object reference, event time segment, and per-time bbox coordinates.",
+  "allowed_role_keys": [
+    "corner_conceder",
+    "corner_taker",
+    "corner_winner",
+    "direct_free_kick_taker",
+    "foul_committer",
+    "fouled_player",
+    "goalkeeper",
+    "indirect_free_kick_taker",
+    "kick_off_taker",
+    "last_passer",
+    "offside_passer",
+    "offside_player",
+    "penalty_taker",
+    "second_last_defender",
+    "shooter",
+    "throw_in_taker"
+  ],
+  "templates": [
+    {
+      "event_type": "Corner Kick",
+      "role_key": "corner_taker",
+      "frozen_role_definition": "The attacking player who takes the target corner kick.",
+      "ptd_referring_query": "the attacking player who takes the target corner kick",
+      "ptd_model_prompt": "Given the query: 'the attacking player who takes the target corner kick' Localize the described object throughout the video. Use object reference tokens, time tokens, and box tokens. Return the object reference, event time segment, and per-time bbox coordinates."
+    },
+    {
+      "event_type": "Corner Won",
+      "role_key": "corner_conceder",
+      "frozen_role_definition": "The defending player whose touch or defensive action directly results in the corner being awarded.",
+      "ptd_referring_query": "the defending player whose touch or defensive action directly results in the corner being awarded",
+      "ptd_model_prompt": "Given the query: 'the defending player whose touch or defensive action directly results in the corner being awarded' Localize the described object throughout the video. Use object reference tokens, time tokens, and box tokens. Return the object reference, event time segment, and per-time bbox coordinates."
+    },
+    {
+      "event_type": "Corner Won",
+      "role_key": "corner_winner",
+      "frozen_role_definition": "The attacking player whose action directly leads to the corner being awarded.",
+      "ptd_referring_query": "the attacking player whose action directly leads to the corner being awarded",
+      "ptd_model_prompt": "Given the query: 'the attacking player whose action directly leads to the corner being awarded' Localize the described object throughout the video. Use object reference tokens, time tokens, and box tokens. Return the object reference, event time segment, and per-time bbox coordinates."
+    },
+    {
+      "event_type": "Direct Free-kick",
+      "role_key": "direct_free_kick_taker",
+      "frozen_role_definition": "The player who takes the target direct free-kick.",
+      "ptd_referring_query": "the player who takes the target direct free-kick",
+      "ptd_model_prompt": "Given the query: 'the player who takes the target direct free-kick' Localize the described object throughout the video. Use object reference tokens, time tokens, and box tokens. Return the object reference, event time segment, and per-time bbox coordinates."
+    },
+    {
+      "event_type": "Direct Free-kick",
+      "role_key": "goalkeeper",
+      "frozen_role_definition": "The goalkeeper defending the goal against the target direct free-kick.",
+      "ptd_referring_query": "the goalkeeper defending the goal against the target direct free-kick",
+      "ptd_model_prompt": "Given the query: 'the goalkeeper defending the goal against the target direct free-kick' Localize the described object throughout the video. Use object reference tokens, time tokens, and box tokens. Return the object reference, event time segment, and per-time bbox coordinates."
+    },
+    {
+      "event_type": "Foul Leading to Direct Free-kick",
+      "role_key": "foul_committer",
+      "frozen_role_definition": "The player who commits the target foul.",
+      "ptd_referring_query": "the player who commits the target foul",
+      "ptd_model_prompt": "Given the query: 'the player who commits the target foul' Localize the described object throughout the video. Use object reference tokens, time tokens, and box tokens. Return the object reference, event time segment, and per-time bbox coordinates."
+    },
+    {
+      "event_type": "Foul Leading to Direct Free-kick",
+      "role_key": "fouled_player",
+      "frozen_role_definition": "The opposing player who is fouled in the target event.",
+      "ptd_referring_query": "the opposing player who is fouled in the target event",
+      "ptd_model_prompt": "Given the query: 'the opposing player who is fouled in the target event' Localize the described object throughout the video. Use object reference tokens, time tokens, and box tokens. Return the object reference, event time segment, and per-time bbox coordinates."
+    },
+    {
+      "event_type": "Foul Leading to Penalty",
+      "role_key": "foul_committer",
+      "frozen_role_definition": "The defending player who commits the target foul.",
+      "ptd_referring_query": "the defending player who commits the target foul",
+      "ptd_model_prompt": "Given the query: 'the defending player who commits the target foul' Localize the described object throughout the video. Use object reference tokens, time tokens, and box tokens. Return the object reference, event time segment, and per-time bbox coordinates."
+    },
+    {
+      "event_type": "Foul Leading to Penalty",
+      "role_key": "fouled_player",
+      "frozen_role_definition": "The attacking player who is fouled in the target event.",
+      "ptd_referring_query": "the attacking player who is fouled in the target event",
+      "ptd_model_prompt": "Given the query: 'the attacking player who is fouled in the target event' Localize the described object throughout the video. Use object reference tokens, time tokens, and box tokens. Return the object reference, event time segment, and per-time bbox coordinates."
+    },
+    {
+      "event_type": "Foul Leading to Red Card",
+      "role_key": "foul_committer",
+      "frozen_role_definition": "The player who commits the target foul and receives the resulting direct red card.",
+      "ptd_referring_query": "the player who commits the target foul and receives the resulting direct red card",
+      "ptd_model_prompt": "Given the query: 'the player who commits the target foul and receives the resulting direct red card' Localize the described object throughout the video. Use object reference tokens, time tokens, and box tokens. Return the object reference, event time segment, and per-time bbox coordinates."
+    },
+    {
+      "event_type": "Foul Leading to Red Card",
+      "role_key": "fouled_player",
+      "frozen_role_definition": "The opposing player who is fouled in the target event.",
+      "ptd_referring_query": "the opposing player who is fouled in the target event",
+      "ptd_model_prompt": "Given the query: 'the opposing player who is fouled in the target event' Localize the described object throughout the video. Use object reference tokens, time tokens, and box tokens. Return the object reference, event time segment, and per-time bbox coordinates."
+    },
+    {
+      "event_type": "Foul Leading to Second Yellow and Red Card",
+      "role_key": "foul_committer",
+      "frozen_role_definition": "The player who commits the target foul and receives the second yellow card and consequent red card.",
+      "ptd_referring_query": "the player who commits the target foul and receives the second yellow card and consequent red card",
+      "ptd_model_prompt": "Given the query: 'the player who commits the target foul and receives the second yellow card and consequent red card' Localize the described object throughout the video. Use object reference tokens, time tokens, and box tokens. Return the object reference, event time segment, and per-time bbox coordinates."
+    },
+    {
+      "event_type": "Foul Leading to Second Yellow and Red Card",
+      "role_key": "fouled_player",
+      "frozen_role_definition": "The opposing player who is fouled in the target event.",
+      "ptd_referring_query": "the opposing player who is fouled in the target event",
+      "ptd_model_prompt": "Given the query: 'the opposing player who is fouled in the target event' Localize the described object throughout the video. Use object reference tokens, time tokens, and box tokens. Return the object reference, event time segment, and per-time bbox coordinates."
+    },
+    {
+      "event_type": "Foul Leading to Yellow Card",
+      "role_key": "foul_committer",
+      "frozen_role_definition": "The player who commits the target foul and receives the resulting yellow card.",
+      "ptd_referring_query": "the player who commits the target foul and receives the resulting yellow card",
+      "ptd_model_prompt": "Given the query: 'the player who commits the target foul and receives the resulting yellow card' Localize the described object throughout the video. Use object reference tokens, time tokens, and box tokens. Return the object reference, event time segment, and per-time bbox coordinates."
+    },
+    {
+      "event_type": "Foul Leading to Yellow Card",
+      "role_key": "fouled_player",
+      "frozen_role_definition": "The opposing player who is fouled in the target event.",
+      "ptd_referring_query": "the opposing player who is fouled in the target event",
+      "ptd_model_prompt": "Given the query: 'the opposing player who is fouled in the target event' Localize the described object throughout the video. Use object reference tokens, time tokens, and box tokens. Return the object reference, event time segment, and per-time bbox coordinates."
+    },
+    {
+      "event_type": "Goal",
+      "role_key": "goalkeeper",
+      "frozen_role_definition": "The goalkeeper defending the goal in which the target goal is scored.",
+      "ptd_referring_query": "the goalkeeper defending the goal in which the target goal is scored",
+      "ptd_model_prompt": "Given the query: 'the goalkeeper defending the goal in which the target goal is scored' Localize the described object throughout the video. Use object reference tokens, time tokens, and box tokens. Return the object reference, event time segment, and per-time bbox coordinates."
+    },
+    {
+      "event_type": "Goal",
+      "role_key": "last_passer",
+      "frozen_role_definition": "The attacking player who makes the final effective pass to the shooter before the target goal.",
+      "ptd_referring_query": "the attacking player who makes the final effective pass to the shooter before the target goal",
+      "ptd_model_prompt": "Given the query: 'the attacking player who makes the final effective pass to the shooter before the target goal' Localize the described object throughout the video. Use object reference tokens, time tokens, and box tokens. Return the object reference, event time segment, and per-time bbox coordinates."
+    },
+    {
+      "event_type": "Goal",
+      "role_key": "shooter",
+      "frozen_role_definition": "The attacking player whose shot results in the target goal.",
+      "ptd_referring_query": "the attacking player whose shot results in the target goal",
+      "ptd_model_prompt": "Given the query: 'the attacking player whose shot results in the target goal' Localize the described object throughout the video. Use object reference tokens, time tokens, and box tokens. Return the object reference, event time segment, and per-time bbox coordinates."
+    },
+    {
+      "event_type": "Goal Kick",
+      "role_key": "goalkeeper",
+      "frozen_role_definition": "The goalkeeper who takes the target goal kick.",
+      "ptd_referring_query": "the goalkeeper who takes the target goal kick",
+      "ptd_model_prompt": "Given the query: 'the goalkeeper who takes the target goal kick' Localize the described object throughout the video. Use object reference tokens, time tokens, and box tokens. Return the object reference, event time segment, and per-time bbox coordinates."
+    },
+    {
+      "event_type": "Indirect Free-kick",
+      "role_key": "indirect_free_kick_taker",
+      "frozen_role_definition": "The player who takes the target indirect free-kick following the offside decision.",
+      "ptd_referring_query": "the player who takes the target indirect free-kick following the offside decision",
+      "ptd_model_prompt": "Given the query: 'the player who takes the target indirect free-kick following the offside decision' Localize the described object throughout the video. Use object reference tokens, time tokens, and box tokens. Return the object reference, event time segment, and per-time bbox coordinates."
+    },
+    {
+      "event_type": "Kick-off",
+      "role_key": "kick_off_taker",
+      "frozen_role_definition": "The player who takes the target kick-off.",
+      "ptd_referring_query": "the player who takes the target kick-off",
+      "ptd_model_prompt": "Given the query: 'the player who takes the target kick-off' Localize the described object throughout the video. Use object reference tokens, time tokens, and box tokens. Return the object reference, event time segment, and per-time bbox coordinates."
+    },
+    {
+      "event_type": "Offside",
+      "role_key": "offside_passer",
+      "frozen_role_definition": "The attacking player who makes the pass associated with the target offside event.",
+      "ptd_referring_query": "the attacking player who makes the pass associated with the target offside event",
+      "ptd_model_prompt": "Given the query: 'the attacking player who makes the pass associated with the target offside event' Localize the described object throughout the video. Use object reference tokens, time tokens, and box tokens. Return the object reference, event time segment, and per-time bbox coordinates."
+    },
+    {
+      "event_type": "Offside",
+      "role_key": "offside_player",
+      "frozen_role_definition": "The attacking player who is judged to have committed the target offside offence.",
+      "ptd_referring_query": "the attacking player who is judged to have committed the target offside offence",
+      "ptd_model_prompt": "Given the query: 'the attacking player who is judged to have committed the target offside offence' Localize the described object throughout the video. Use object reference tokens, time tokens, and box tokens. Return the object reference, event time segment, and per-time bbox coordinates."
+    },
+    {
+      "event_type": "Offside",
+      "role_key": "second_last_defender",
+      "frozen_role_definition": "The second-last defending player relative to the defending goal line when the offside pass is made, serving as the reference defender for the target offside event.",
+      "ptd_referring_query": "the second-last defending player relative to the defending goal line when the offside pass is made, serving as the reference defender for the target offside event",
+      "ptd_model_prompt": "Given the query: 'the second-last defending player relative to the defending goal line when the offside pass is made, serving as the reference defender for the target offside event' Localize the described object throughout the video. Use object reference tokens, time tokens, and box tokens. Return the object reference, event time segment, and per-time bbox coordinates."
+    },
+    {
+      "event_type": "Penalty Kick",
+      "role_key": "goalkeeper",
+      "frozen_role_definition": "The goalkeeper defending the goal against the target penalty kick.",
+      "ptd_referring_query": "the goalkeeper defending the goal against the target penalty kick",
+      "ptd_model_prompt": "Given the query: 'the goalkeeper defending the goal against the target penalty kick' Localize the described object throughout the video. Use object reference tokens, time tokens, and box tokens. Return the object reference, event time segment, and per-time bbox coordinates."
+    },
+    {
+      "event_type": "Penalty Kick",
+      "role_key": "penalty_taker",
+      "frozen_role_definition": "The player who takes the target penalty kick.",
+      "ptd_referring_query": "the player who takes the target penalty kick",
+      "ptd_model_prompt": "Given the query: 'the player who takes the target penalty kick' Localize the described object throughout the video. Use object reference tokens, time tokens, and box tokens. Return the object reference, event time segment, and per-time bbox coordinates."
+    },
+    {
+      "event_type": "Shot off Target",
+      "role_key": "goalkeeper",
+      "frozen_role_definition": "The goalkeeper defending the goal targeted by the attacking sequence.",
+      "ptd_referring_query": "the goalkeeper defending the goal targeted by the attacking sequence",
+      "ptd_model_prompt": "Given the query: 'the goalkeeper defending the goal targeted by the attacking sequence' Localize the described object throughout the video. Use object reference tokens, time tokens, and box tokens. Return the object reference, event time segment, and per-time bbox coordinates."
+    },
+    {
+      "event_type": "Shot off Target",
+      "role_key": "last_passer",
+      "frozen_role_definition": "The attacking player who makes the final effective pass to the shooter before the shot.",
+      "ptd_referring_query": "the attacking player who makes the final effective pass to the shooter before the shot",
+      "ptd_model_prompt": "Given the query: 'the attacking player who makes the final effective pass to the shooter before the shot' Localize the described object throughout the video. Use object reference tokens, time tokens, and box tokens. Return the object reference, event time segment, and per-time bbox coordinates."
+    },
+    {
+      "event_type": "Shot off Target",
+      "role_key": "shooter",
+      "frozen_role_definition": "The attacking player who takes the shot.",
+      "ptd_referring_query": "the attacking player who takes the shot",
+      "ptd_model_prompt": "Given the query: 'the attacking player who takes the shot' Localize the described object throughout the video. Use object reference tokens, time tokens, and box tokens. Return the object reference, event time segment, and per-time bbox coordinates."
+    },
+    {
+      "event_type": "Shot on Target",
+      "role_key": "goalkeeper",
+      "frozen_role_definition": "The goalkeeper defending the goal against the shot.",
+      "ptd_referring_query": "the goalkeeper defending the goal against the shot",
+      "ptd_model_prompt": "Given the query: 'the goalkeeper defending the goal against the shot' Localize the described object throughout the video. Use object reference tokens, time tokens, and box tokens. Return the object reference, event time segment, and per-time bbox coordinates."
+    },
+    {
+      "event_type": "Shot on Target",
+      "role_key": "last_passer",
+      "frozen_role_definition": "The attacking player who makes the final effective pass to the shooter before the shot.",
+      "ptd_referring_query": "the attacking player who makes the final effective pass to the shooter before the shot",
+      "ptd_model_prompt": "Given the query: 'the attacking player who makes the final effective pass to the shooter before the shot' Localize the described object throughout the video. Use object reference tokens, time tokens, and box tokens. Return the object reference, event time segment, and per-time bbox coordinates."
+    },
+    {
+      "event_type": "Shot on Target",
+      "role_key": "shooter",
+      "frozen_role_definition": "The attacking player who takes the shot.",
+      "ptd_referring_query": "the attacking player who takes the shot",
+      "ptd_model_prompt": "Given the query: 'the attacking player who takes the shot' Localize the described object throughout the video. Use object reference tokens, time tokens, and box tokens. Return the object reference, event time segment, and per-time bbox coordinates."
+    },
+    {
+      "event_type": "Throw-in",
+      "role_key": "throw_in_taker",
+      "frozen_role_definition": "The player who takes the target throw-in.",
+      "ptd_referring_query": "the player who takes the target throw-in",
+      "ptd_model_prompt": "Given the query: 'the player who takes the target throw-in' Localize the described object throughout the video. Use object reference tokens, time tokens, and box tokens. Return the object reference, event time segment, and per-time bbox coordinates."
+    }
+  ]
+}

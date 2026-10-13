@@ -1,0 +1,766 @@
+{
+  "cross_annotation_pairs": 355,
+  "final_temporal_review_count": 176,
+  "final_temporal_review_statuses": {
+    "pass": 176
+  },
+  "timestamp_corrections": {
+    "all_manual_comparisons_passed": true,
+    "base_count": 3485,
+    "duplicate_audit": "research/SoccerNet/DataRecovery/recovered_31_vs_3485_duplicate_audit.json",
+    "manifest": "research/RoleSTVG/context_audit/timestamp_alignment_audit/final_timestamp_manifest_3516.jsonl",
+    "recovered_added_count": 31,
+    "row_count": 3516,
+    "sha256": "5b0e5ad9cf60d0ec2ff4e4521ab5255ec22fc2e6a88e1bb66f70ef7e09b9f011",
+    "status_counts": {
+      "verified": 3516
+    },
+    "unique_sample_ids": 3516
+  },
+  "final_manifests": {
+    "oracle": {
+      "configuration": {
+        "context_policy_version": 8,
+        "eligible_target_count": 3516,
+        "existing_context_video_root": "external_data/RoleSTVG/core_corrected_v2_boundary_clamp",
+        "global_seed": 20260727,
+        "manual_exclusions": {
+          "manual_exclusion_count": 25,
+          "manual_exclusion_manifest_path": "research/RoleSTVG/context_audit/same_type_collision_review/manual_same_event_duplicate_exclusions.jsonl",
+          "manual_exclusion_manifest_sha256": "c28226eea45d065c7128e25dc61d9e4ae8f83c0778e9f15728f9ad3923f90f9b",
+          "manual_exclusion_reason": "manual_same_event_duplicate"
+        },
+        "occurrence_counting_policy": "qualified_soccernet_target_or_timestamp_or_contained_trim_v1",
+        "timestamp_correction": {
+          "allow_probable_corrections": false,
+          "correction_excluded_count": 3,
+          "correction_extra_record_count": 0,
+          "correction_manifest_path": "research/RoleSTVG/context_audit/timestamp_alignment_audit/final_timestamp_manifest_3516.jsonl",
+          "correction_manifest_sha256": "5b0e5ad9cf60d0ec2ff4e4521ab5255ec22fc2e6a88e1bb66f70ef7e09b9f011",
+          "correction_record_count": 3516,
+          "manual_audit_manifest_path": "research/RoleSTVG/context_audit/timestamp_alignment_audit/manual_audit_passes_700.jsonl",
+          "manual_audit_manifest_sha256": "60b6f3fbfd7bb2830eb5495de1a7b4053f3be1228c29108ff4c7a4fe44a49aa5",
+          "manual_audit_pass_count": 700,
+          "manual_audit_record_count": 700,
+          "source_boundary_clamped_count": 17,
+          "source_boundary_tolerance_frames": 2,
+          "source_boundary_tolerance_sec": 0.08,
+          "timestamp_correction_version": "timestamp-correction-v1"
+        },
+        "trim_inventory_size": 3516
+      },
+      "summary": {
+        "all_window_validity_checks_passed": true,
+        "context_policy_version": 8,
+        "context_type": "oracle",
+        "dry_run": false,
+        "event_category_distribution": {
+          "corner_kick": 276,
+          "corner_won": 376,
+          "direct_free_kick": 150,
+          "foul_direct_free_kick": 150,
+          "foul_penalty": 11,
+          "foul_red_card": 3,
+          "foul_second_yellow_red_card": 3,
+          "foul_yellow_card": 175,
+          "goal": 148,
+          "goal_kick": 221,
+          "indirect_free_kick": 54,
+          "kick_off": 46,
+          "offside": 147,
+          "penalty_kick": 11,
+          "shot_off_target": 469,
+          "shot_on_target": 462,
+          "throw_in": 814
+        },
+        "global_seed": 20260727,
+        "manifests_only": true,
+        "manual_exclusions": {
+          "manual_exclusion_count": 25,
+          "manual_exclusion_manifest_path": "research/RoleSTVG/context_audit/same_type_collision_review/manual_same_event_duplicate_exclusions.jsonl",
+          "manual_exclusion_manifest_sha256": "c28226eea45d065c7128e25dc61d9e4ae8f83c0778e9f15728f9ad3923f90f9b",
+          "manual_exclusion_reason": "manual_same_event_duplicate"
+        },
+        "occurrence_counting_policy": "qualified_soccernet_target_or_timestamp_or_contained_trim_v1",
+        "removal_reason_distribution": {
+          "manual_same_event_duplicate": 25,
+          "problem_flag_present": 182,
+          "timestamp_correction_missing": 3
+        },
+        "removed_event_category_distribution": {
+          "corner_kick": 11,
+          "corner_won": 45,
+          "direct_free_kick": 3,
+          "foul_direct_free_kick": 5,
+          "foul_penalty": 1,
+          "foul_second_yellow_red_card": 1,
+          "foul_yellow_card": 13,
+          "goal": 7,
+          "goal_kick": 8,
+          "indirect_free_kick": 7,
+          "kick_off": 6,
+          "offside": 18,
+          "penalty_kick": 1,
+          "shot_off_target": 21,
+          "shot_on_target": 23,
+          "throw_in": 40
+        },
+        "removed_samples": 210,
+        "source_timestamp_inside_context_distribution": {
+          "false": 972,
+          "true": 2544
+        },
+        "timestamp_correction": {
+          "allow_probable_corrections": false,
+          "correction_excluded_count": 3,
+          "correction_extra_record_count": 0,
+          "correction_manifest_path": "research/RoleSTVG/context_audit/timestamp_alignment_audit/final_timestamp_manifest_3516.jsonl",
+          "correction_manifest_sha256": "5b0e5ad9cf60d0ec2ff4e4521ab5255ec22fc2e6a88e1bb66f70ef7e09b9f011",
+          "correction_record_count": 3516,
+          "manual_audit_manifest_path": "research/RoleSTVG/context_audit/timestamp_alignment_audit/manual_audit_passes_700.jsonl",
+          "manual_audit_manifest_sha256": "60b6f3fbfd7bb2830eb5495de1a7b4053f3be1228c29108ff4c7a4fe44a49aa5",
+          "manual_audit_pass_count": 700,
+          "manual_audit_record_count": 700,
+          "source_boundary_clamped_count": 17,
+          "source_boundary_tolerance_frames": 2,
+          "source_boundary_tolerance_sec": 0.08,
+          "timestamp_correction_version": "timestamp-correction-v1"
+        },
+        "total_samples": 3516
+      }
+    },
+    "context_1min": {
+      "configuration": {
+        "context_policy_version": 8,
+        "eligible_target_count": 3516,
+        "existing_context_video_root": "external_data/RoleSTVG/core_corrected_v2_boundary_clamp",
+        "global_seed": 20260727,
+        "manual_exclusions": {
+          "manual_exclusion_count": 25,
+          "manual_exclusion_manifest_path": "research/RoleSTVG/context_audit/same_type_collision_review/manual_same_event_duplicate_exclusions.jsonl",
+          "manual_exclusion_manifest_sha256": "c28226eea45d065c7128e25dc61d9e4ae8f83c0778e9f15728f9ad3923f90f9b",
+          "manual_exclusion_reason": "manual_same_event_duplicate"
+        },
+        "occurrence_counting_policy": "qualified_soccernet_target_or_timestamp_or_contained_trim_v1",
+        "timestamp_correction": {
+          "allow_probable_corrections": false,
+          "correction_excluded_count": 3,
+          "correction_extra_record_count": 0,
+          "correction_manifest_path": "research/RoleSTVG/context_audit/timestamp_alignment_audit/final_timestamp_manifest_3516.jsonl",
+          "correction_manifest_sha256": "5b0e5ad9cf60d0ec2ff4e4521ab5255ec22fc2e6a88e1bb66f70ef7e09b9f011",
+          "correction_record_count": 3516,
+          "manual_audit_manifest_path": "research/RoleSTVG/context_audit/timestamp_alignment_audit/manual_audit_passes_700.jsonl",
+          "manual_audit_manifest_sha256": "60b6f3fbfd7bb2830eb5495de1a7b4053f3be1228c29108ff4c7a4fe44a49aa5",
+          "manual_audit_pass_count": 700,
+          "manual_audit_record_count": 700,
+          "source_boundary_clamped_count": 17,
+          "source_boundary_tolerance_frames": 2,
+          "source_boundary_tolerance_sec": 0.08,
+          "timestamp_correction_version": "timestamp-correction-v1"
+        },
+        "trim_inventory_size": 3516
+      },
+      "summary": {
+        "all_window_validity_checks_passed": true,
+        "clean_repeated_distribution": {
+          "clean": 3035,
+          "repeated": 481
+        },
+        "context_policy_version": 8,
+        "context_type": "context_1min",
+        "dry_run": false,
+        "event_category_distribution": {
+          "corner_kick": 276,
+          "corner_won": 376,
+          "direct_free_kick": 150,
+          "foul_direct_free_kick": 150,
+          "foul_penalty": 11,
+          "foul_red_card": 3,
+          "foul_second_yellow_red_card": 3,
+          "foul_yellow_card": 175,
+          "goal": 148,
+          "goal_kick": 221,
+          "indirect_free_kick": 54,
+          "kick_off": 46,
+          "offside": 147,
+          "penalty_kick": 11,
+          "shot_off_target": 469,
+          "shot_on_target": 462,
+          "throw_in": 814
+        },
+        "global_seed": 20260727,
+        "manifests_only": true,
+        "manual_exclusions": {
+          "manual_exclusion_count": 25,
+          "manual_exclusion_manifest_path": "research/RoleSTVG/context_audit/same_type_collision_review/manual_same_event_duplicate_exclusions.jsonl",
+          "manual_exclusion_manifest_sha256": "c28226eea45d065c7128e25dc61d9e4ae8f83c0778e9f15728f9ad3923f90f9b",
+          "manual_exclusion_reason": "manual_same_event_duplicate"
+        },
+        "num_prior_same_events_distribution": {
+          "0": 3272,
+          "1": 228,
+          "2": 16
+        },
+        "num_same_event_distractors_distribution": {
+          "0": 3035,
+          "1": 416,
+          "2": 59,
+          "3": 6
+        },
+        "occurrence_counting_policy": "qualified_soccernet_target_or_timestamp_or_contained_trim_v1",
+        "removal_reason_distribution": {
+          "manual_same_event_duplicate": 25,
+          "problem_flag_present": 182,
+          "timestamp_correction_missing": 3
+        },
+        "removed_event_category_distribution": {
+          "corner_kick": 11,
+          "corner_won": 45,
+          "direct_free_kick": 3,
+          "foul_direct_free_kick": 5,
+          "foul_penalty": 1,
+          "foul_second_yellow_red_card": 1,
+          "foul_yellow_card": 13,
+          "goal": 7,
+          "goal_kick": 8,
+          "indirect_free_kick": 7,
+          "kick_off": 6,
+          "offside": 18,
+          "penalty_kick": 1,
+          "shot_off_target": 21,
+          "shot_on_target": 23,
+          "throw_in": 40
+        },
+        "removed_samples": 210,
+        "requires_disambiguation_distribution": {
+          "false": 3035,
+          "true": 481
+        },
+        "same_event_count_distribution": {
+          "1": 3035,
+          "2": 416,
+          "3": 59,
+          "4": 6
+        },
+        "source_timestamp_inside_context_distribution": {
+          "false": 397,
+          "true": 3119
+        },
+        "target_event_order_distribution": {
+          "1": 3272,
+          "2": 228,
+          "3": 16
+        },
+        "timestamp_correction": {
+          "allow_probable_corrections": false,
+          "correction_excluded_count": 3,
+          "correction_extra_record_count": 0,
+          "correction_manifest_path": "research/RoleSTVG/context_audit/timestamp_alignment_audit/final_timestamp_manifest_3516.jsonl",
+          "correction_manifest_sha256": "5b0e5ad9cf60d0ec2ff4e4521ab5255ec22fc2e6a88e1bb66f70ef7e09b9f011",
+          "correction_record_count": 3516,
+          "manual_audit_manifest_path": "research/RoleSTVG/context_audit/timestamp_alignment_audit/manual_audit_passes_700.jsonl",
+          "manual_audit_manifest_sha256": "60b6f3fbfd7bb2830eb5495de1a7b4053f3be1228c29108ff4c7a4fe44a49aa5",
+          "manual_audit_pass_count": 700,
+          "manual_audit_record_count": 700,
+          "source_boundary_clamped_count": 17,
+          "source_boundary_tolerance_frames": 2,
+          "source_boundary_tolerance_sec": 0.08,
+          "timestamp_correction_version": "timestamp-correction-v1"
+        },
+        "total_samples": 3516
+      }
+    },
+    "context_3min": {
+      "configuration": {
+        "context_policy_version": 8,
+        "eligible_target_count": 3516,
+        "existing_context_video_root": "external_data/RoleSTVG/core_corrected_v2_boundary_clamp",
+        "global_seed": 42,
+        "manual_exclusions": {
+          "manual_exclusion_count": 25,
+          "manual_exclusion_manifest_path": "research/RoleSTVG/context_audit/same_type_collision_review/manual_same_event_duplicate_exclusions.jsonl",
+          "manual_exclusion_manifest_sha256": "c28226eea45d065c7128e25dc61d9e4ae8f83c0778e9f15728f9ad3923f90f9b",
+          "manual_exclusion_reason": "manual_same_event_duplicate"
+        },
+        "occurrence_counting_policy": "qualified_soccernet_target_or_timestamp_or_contained_trim_v1",
+        "timestamp_correction": {
+          "allow_probable_corrections": false,
+          "correction_excluded_count": 3,
+          "correction_extra_record_count": 0,
+          "correction_manifest_path": "research/RoleSTVG/context_audit/timestamp_alignment_audit/final_timestamp_manifest_3516.jsonl",
+          "correction_manifest_sha256": "5b0e5ad9cf60d0ec2ff4e4521ab5255ec22fc2e6a88e1bb66f70ef7e09b9f011",
+          "correction_record_count": 3516,
+          "manual_audit_manifest_path": "research/RoleSTVG/context_audit/timestamp_alignment_audit/manual_audit_passes_700.jsonl",
+          "manual_audit_manifest_sha256": "60b6f3fbfd7bb2830eb5495de1a7b4053f3be1228c29108ff4c7a4fe44a49aa5",
+          "manual_audit_pass_count": 700,
+          "manual_audit_record_count": 700,
+          "source_boundary_clamped_count": 17,
+          "source_boundary_tolerance_frames": 2,
+          "source_boundary_tolerance_sec": 0.08,
+          "timestamp_correction_version": "timestamp-correction-v1"
+        },
+        "trim_inventory_size": 3516
+      },
+      "summary": {
+        "all_window_validity_checks_passed": true,
+        "clean_repeated_distribution": {
+          "clean": 2358,
+          "repeated": 1158
+        },
+        "context_policy_version": 8,
+        "context_type": "context_3min",
+        "dry_run": false,
+        "event_category_distribution": {
+          "corner_kick": 276,
+          "corner_won": 376,
+          "direct_free_kick": 150,
+          "foul_direct_free_kick": 150,
+          "foul_penalty": 11,
+          "foul_red_card": 3,
+          "foul_second_yellow_red_card": 3,
+          "foul_yellow_card": 175,
+          "goal": 148,
+          "goal_kick": 221,
+          "indirect_free_kick": 54,
+          "kick_off": 46,
+          "offside": 147,
+          "penalty_kick": 11,
+          "shot_off_target": 469,
+          "shot_on_target": 462,
+          "throw_in": 814
+        },
+        "global_seed": 42,
+        "manifests_only": true,
+        "manual_exclusions": {
+          "manual_exclusion_count": 25,
+          "manual_exclusion_manifest_path": "research/RoleSTVG/context_audit/same_type_collision_review/manual_same_event_duplicate_exclusions.jsonl",
+          "manual_exclusion_manifest_sha256": "c28226eea45d065c7128e25dc61d9e4ae8f83c0778e9f15728f9ad3923f90f9b",
+          "manual_exclusion_reason": "manual_same_event_duplicate"
+        },
+        "num_prior_same_events_distribution": {
+          "0": 2877,
+          "1": 502,
+          "2": 104,
+          "3": 27,
+          "4": 4,
+          "5": 1,
+          "6": 1
+        },
+        "num_same_event_distractors_distribution": {
+          "0": 2358,
+          "1": 783,
+          "2": 237,
+          "3": 109,
+          "4": 19,
+          "5": 6,
+          "6": 4
+        },
+        "occurrence_counting_policy": "qualified_soccernet_target_or_timestamp_or_contained_trim_v1",
+        "removal_reason_distribution": {
+          "manual_same_event_duplicate": 25,
+          "problem_flag_present": 182,
+          "timestamp_correction_missing": 3
+        },
+        "removed_event_category_distribution": {
+          "corner_kick": 11,
+          "corner_won": 45,
+          "direct_free_kick": 3,
+          "foul_direct_free_kick": 5,
+          "foul_penalty": 1,
+          "foul_second_yellow_red_card": 1,
+          "foul_yellow_card": 13,
+          "goal": 7,
+          "goal_kick": 8,
+          "indirect_free_kick": 7,
+          "kick_off": 6,
+          "offside": 18,
+          "penalty_kick": 1,
+          "shot_off_target": 21,
+          "shot_on_target": 23,
+          "throw_in": 40
+        },
+        "removed_samples": 210,
+        "requires_disambiguation_distribution": {
+          "false": 2358,
+          "true": 1158
+        },
+        "same_event_count_distribution": {
+          "1": 2358,
+          "2": 783,
+          "3": 237,
+          "4": 109,
+          "5": 19,
+          "6": 6,
+          "7": 4
+        },
+        "source_timestamp_inside_context_distribution": {
+          "false": 128,
+          "true": 3388
+        },
+        "target_event_order_distribution": {
+          "1": 2877,
+          "2": 502,
+          "3": 104,
+          "4": 27,
+          "5": 4,
+          "6": 1,
+          "7": 1
+        },
+        "timestamp_correction": {
+          "allow_probable_corrections": false,
+          "correction_excluded_count": 3,
+          "correction_extra_record_count": 0,
+          "correction_manifest_path": "research/RoleSTVG/context_audit/timestamp_alignment_audit/final_timestamp_manifest_3516.jsonl",
+          "correction_manifest_sha256": "5b0e5ad9cf60d0ec2ff4e4521ab5255ec22fc2e6a88e1bb66f70ef7e09b9f011",
+          "correction_record_count": 3516,
+          "manual_audit_manifest_path": "research/RoleSTVG/context_audit/timestamp_alignment_audit/manual_audit_passes_700.jsonl",
+          "manual_audit_manifest_sha256": "60b6f3fbfd7bb2830eb5495de1a7b4053f3be1228c29108ff4c7a4fe44a49aa5",
+          "manual_audit_pass_count": 700,
+          "manual_audit_record_count": 700,
+          "source_boundary_clamped_count": 17,
+          "source_boundary_tolerance_frames": 2,
+          "source_boundary_tolerance_sec": 0.08,
+          "timestamp_correction_version": "timestamp-correction-v1"
+        },
+        "total_samples": 3516
+      }
+    },
+    "context_5min": {
+      "configuration": {
+        "context_policy_version": 8,
+        "eligible_target_count": 3516,
+        "existing_context_video_root": "external_data/RoleSTVG/core_corrected_v2_boundary_clamp",
+        "global_seed": 20260727,
+        "manual_exclusions": {
+          "manual_exclusion_count": 25,
+          "manual_exclusion_manifest_path": "research/RoleSTVG/context_audit/same_type_collision_review/manual_same_event_duplicate_exclusions.jsonl",
+          "manual_exclusion_manifest_sha256": "c28226eea45d065c7128e25dc61d9e4ae8f83c0778e9f15728f9ad3923f90f9b",
+          "manual_exclusion_reason": "manual_same_event_duplicate"
+        },
+        "occurrence_counting_policy": "qualified_soccernet_target_or_timestamp_or_contained_trim_v1",
+        "timestamp_correction": {
+          "allow_probable_corrections": false,
+          "correction_excluded_count": 3,
+          "correction_extra_record_count": 0,
+          "correction_manifest_path": "research/RoleSTVG/context_audit/timestamp_alignment_audit/final_timestamp_manifest_3516.jsonl",
+          "correction_manifest_sha256": "5b0e5ad9cf60d0ec2ff4e4521ab5255ec22fc2e6a88e1bb66f70ef7e09b9f011",
+          "correction_record_count": 3516,
+          "manual_audit_manifest_path": "research/RoleSTVG/context_audit/timestamp_alignment_audit/manual_audit_passes_700.jsonl",
+          "manual_audit_manifest_sha256": "60b6f3fbfd7bb2830eb5495de1a7b4053f3be1228c29108ff4c7a4fe44a49aa5",
+          "manual_audit_pass_count": 700,
+          "manual_audit_record_count": 700,
+          "source_boundary_clamped_count": 17,
+          "source_boundary_tolerance_frames": 2,
+          "source_boundary_tolerance_sec": 0.08,
+          "timestamp_correction_version": "timestamp-correction-v1"
+        },
+        "trim_inventory_size": 3516
+      },
+      "summary": {
+        "all_window_validity_checks_passed": true,
+        "clean_repeated_distribution": {
+          "clean": 1862,
+          "repeated": 1654
+        },
+        "context_policy_version": 8,
+        "context_type": "context_5min",
+        "dry_run": false,
+        "event_category_distribution": {
+          "corner_kick": 276,
+          "corner_won": 376,
+          "direct_free_kick": 150,
+          "foul_direct_free_kick": 150,
+          "foul_penalty": 11,
+          "foul_red_card": 3,
+          "foul_second_yellow_red_card": 3,
+          "foul_yellow_card": 175,
+          "goal": 148,
+          "goal_kick": 221,
+          "indirect_free_kick": 54,
+          "kick_off": 46,
+          "offside": 147,
+          "penalty_kick": 11,
+          "shot_off_target": 469,
+          "shot_on_target": 462,
+          "throw_in": 814
+        },
+        "global_seed": 20260727,
+        "manifests_only": true,
+        "manual_exclusions": {
+          "manual_exclusion_count": 25,
+          "manual_exclusion_manifest_path": "research/RoleSTVG/context_audit/same_type_collision_review/manual_same_event_duplicate_exclusions.jsonl",
+          "manual_exclusion_manifest_sha256": "c28226eea45d065c7128e25dc61d9e4ae8f83c0778e9f15728f9ad3923f90f9b",
+          "manual_exclusion_reason": "manual_same_event_duplicate"
+        },
+        "num_prior_same_events_distribution": {
+          "0": 2525,
+          "1": 700,
+          "2": 192,
+          "3": 63,
+          "4": 22,
+          "5": 10,
+          "6": 4
+        },
+        "num_same_event_distractors_distribution": {
+          "0": 1862,
+          "1": 948,
+          "2": 388,
+          "3": 179,
+          "4": 84,
+          "5": 41,
+          "6": 11,
+          "7": 1,
+          "8": 2
+        },
+        "occurrence_counting_policy": "qualified_soccernet_target_or_timestamp_or_contained_trim_v1",
+        "removal_reason_distribution": {
+          "manual_same_event_duplicate": 25,
+          "problem_flag_present": 182,
+          "timestamp_correction_missing": 3
+        },
+        "removed_event_category_distribution": {
+          "corner_kick": 11,
+          "corner_won": 45,
+          "direct_free_kick": 3,
+          "foul_direct_free_kick": 5,
+          "foul_penalty": 1,
+          "foul_second_yellow_red_card": 1,
+          "foul_yellow_card": 13,
+          "goal": 7,
+          "goal_kick": 8,
+          "indirect_free_kick": 7,
+          "kick_off": 6,
+          "offside": 18,
+          "penalty_kick": 1,
+          "shot_off_target": 21,
+          "shot_on_target": 23,
+          "throw_in": 40
+        },
+        "removed_samples": 210,
+        "requires_disambiguation_distribution": {
+          "false": 1862,
+          "true": 1654
+        },
+        "same_event_count_distribution": {
+          "1": 1862,
+          "2": 948,
+          "3": 388,
+          "4": 179,
+          "5": 84,
+          "6": 41,
+          "7": 11,
+          "8": 1,
+          "9": 2
+        },
+        "source_timestamp_inside_context_distribution": {
+          "false": 79,
+          "true": 3437
+        },
+        "target_event_order_distribution": {
+          "1": 2525,
+          "2": 700,
+          "3": 192,
+          "4": 63,
+          "5": 22,
+          "6": 10,
+          "7": 4
+        },
+        "timestamp_correction": {
+          "allow_probable_corrections": false,
+          "correction_excluded_count": 3,
+          "correction_extra_record_count": 0,
+          "correction_manifest_path": "research/RoleSTVG/context_audit/timestamp_alignment_audit/final_timestamp_manifest_3516.jsonl",
+          "correction_manifest_sha256": "5b0e5ad9cf60d0ec2ff4e4521ab5255ec22fc2e6a88e1bb66f70ef7e09b9f011",
+          "correction_record_count": 3516,
+          "manual_audit_manifest_path": "research/RoleSTVG/context_audit/timestamp_alignment_audit/manual_audit_passes_700.jsonl",
+          "manual_audit_manifest_sha256": "60b6f3fbfd7bb2830eb5495de1a7b4053f3be1228c29108ff4c7a4fe44a49aa5",
+          "manual_audit_pass_count": 700,
+          "manual_audit_record_count": 700,
+          "source_boundary_clamped_count": 17,
+          "source_boundary_tolerance_frames": 2,
+          "source_boundary_tolerance_sec": 0.08,
+          "timestamp_correction_version": "timestamp-correction-v1"
+        },
+        "total_samples": 3516
+      }
+    },
+    "context_10min": {
+      "configuration": {
+        "context_policy_version": 8,
+        "eligible_target_count": 3516,
+        "existing_context_video_root": "external_data/RoleSTVG/core_corrected_v2_boundary_clamp",
+        "global_seed": 20260727,
+        "manual_exclusions": {
+          "manual_exclusion_count": 25,
+          "manual_exclusion_manifest_path": "research/RoleSTVG/context_audit/same_type_collision_review/manual_same_event_duplicate_exclusions.jsonl",
+          "manual_exclusion_manifest_sha256": "c28226eea45d065c7128e25dc61d9e4ae8f83c0778e9f15728f9ad3923f90f9b",
+          "manual_exclusion_reason": "manual_same_event_duplicate"
+        },
+        "occurrence_counting_policy": "qualified_soccernet_target_or_timestamp_or_contained_trim_v1",
+        "timestamp_correction": {
+          "allow_probable_corrections": false,
+          "correction_excluded_count": 3,
+          "correction_extra_record_count": 0,
+          "correction_manifest_path": "research/RoleSTVG/context_audit/timestamp_alignment_audit/final_timestamp_manifest_3516.jsonl",
+          "correction_manifest_sha256": "5b0e5ad9cf60d0ec2ff4e4521ab5255ec22fc2e6a88e1bb66f70ef7e09b9f011",
+          "correction_record_count": 3516,
+          "manual_audit_manifest_path": "research/RoleSTVG/context_audit/timestamp_alignment_audit/manual_audit_passes_700.jsonl",
+          "manual_audit_manifest_sha256": "60b6f3fbfd7bb2830eb5495de1a7b4053f3be1228c29108ff4c7a4fe44a49aa5",
+          "manual_audit_pass_count": 700,
+          "manual_audit_record_count": 700,
+          "source_boundary_clamped_count": 17,
+          "source_boundary_tolerance_frames": 2,
+          "source_boundary_tolerance_sec": 0.08,
+          "timestamp_correction_version": "timestamp-correction-v1"
+        },
+        "trim_inventory_size": 3516
+      },
+      "summary": {
+        "all_window_validity_checks_passed": true,
+        "clean_repeated_distribution": {
+          "clean": 1101,
+          "repeated": 2415
+        },
+        "context_policy_version": 8,
+        "context_type": "context_10min",
+        "dry_run": false,
+        "event_category_distribution": {
+          "corner_kick": 276,
+          "corner_won": 376,
+          "direct_free_kick": 150,
+          "foul_direct_free_kick": 150,
+          "foul_penalty": 11,
+          "foul_red_card": 3,
+          "foul_second_yellow_red_card": 3,
+          "foul_yellow_card": 175,
+          "goal": 148,
+          "goal_kick": 221,
+          "indirect_free_kick": 54,
+          "kick_off": 46,
+          "offside": 147,
+          "penalty_kick": 11,
+          "shot_off_target": 469,
+          "shot_on_target": 462,
+          "throw_in": 814
+        },
+        "global_seed": 20260727,
+        "manifests_only": true,
+        "manual_exclusions": {
+          "manual_exclusion_count": 25,
+          "manual_exclusion_manifest_path": "research/RoleSTVG/context_audit/same_type_collision_review/manual_same_event_duplicate_exclusions.jsonl",
+          "manual_exclusion_manifest_sha256": "c28226eea45d065c7128e25dc61d9e4ae8f83c0778e9f15728f9ad3923f90f9b",
+          "manual_exclusion_reason": "manual_same_event_duplicate"
+        },
+        "num_prior_same_events_distribution": {
+          "0": 1995,
+          "1": 813,
+          "10": 1,
+          "11": 1,
+          "2": 380,
+          "3": 162,
+          "4": 79,
+          "5": 44,
+          "6": 25,
+          "7": 10,
+          "8": 4,
+          "9": 2
+        },
+        "num_same_event_distractors_distribution": {
+          "0": 1101,
+          "1": 967,
+          "10": 9,
+          "12": 1,
+          "13": 3,
+          "2": 604,
+          "3": 324,
+          "4": 194,
+          "5": 148,
+          "6": 85,
+          "7": 52,
+          "8": 19,
+          "9": 9
+        },
+        "occurrence_counting_policy": "qualified_soccernet_target_or_timestamp_or_contained_trim_v1",
+        "removal_reason_distribution": {
+          "manual_same_event_duplicate": 25,
+          "problem_flag_present": 182,
+          "timestamp_correction_missing": 3
+        },
+        "removed_event_category_distribution": {
+          "corner_kick": 11,
+          "corner_won": 45,
+          "direct_free_kick": 3,
+          "foul_direct_free_kick": 5,
+          "foul_penalty": 1,
+          "foul_second_yellow_red_card": 1,
+          "foul_yellow_card": 13,
+          "goal": 7,
+          "goal_kick": 8,
+          "indirect_free_kick": 7,
+          "kick_off": 6,
+          "offside": 18,
+          "penalty_kick": 1,
+          "shot_off_target": 21,
+          "shot_on_target": 23,
+          "throw_in": 40
+        },
+        "removed_samples": 210,
+        "requires_disambiguation_distribution": {
+          "false": 1101,
+          "true": 2415
+        },
+        "same_event_count_distribution": {
+          "1": 1101,
+          "10": 9,
+          "11": 9,
+          "13": 1,
+          "14": 3,
+          "2": 967,
+          "3": 604,
+          "4": 324,
+          "5": 194,
+          "6": 148,
+          "7": 85,
+          "8": 52,
+          "9": 19
+        },
+        "source_timestamp_inside_context_distribution": {
+          "false": 52,
+          "true": 3464
+        },
+        "target_event_order_distribution": {
+          "1": 1995,
+          "10": 2,
+          "11": 1,
+          "12": 1,
+          "2": 813,
+          "3": 380,
+          "4": 162,
+          "5": 79,
+          "6": 44,
+          "7": 25,
+          "8": 10,
+          "9": 4
+        },
+        "timestamp_correction": {
+          "allow_probable_corrections": false,
+          "correction_excluded_count": 3,
+          "correction_extra_record_count": 0,
+          "correction_manifest_path": "research/RoleSTVG/context_audit/timestamp_alignment_audit/final_timestamp_manifest_3516.jsonl",
+          "correction_manifest_sha256": "5b0e5ad9cf60d0ec2ff4e4521ab5255ec22fc2e6a88e1bb66f70ef7e09b9f011",
+          "correction_record_count": 3516,
+          "manual_audit_manifest_path": "research/RoleSTVG/context_audit/timestamp_alignment_audit/manual_audit_passes_700.jsonl",
+          "manual_audit_manifest_sha256": "60b6f3fbfd7bb2830eb5495de1a7b4053f3be1228c29108ff4c7a4fe44a49aa5",
+          "manual_audit_pass_count": 700,
+          "manual_audit_record_count": 700,
+          "source_boundary_clamped_count": 17,
+          "source_boundary_tolerance_frames": 2,
+          "source_boundary_tolerance_sec": 0.08,
+          "timestamp_correction_version": "timestamp-correction-v1"
+        },
+        "total_samples": 3516
+      }
+    }
+  },
+  "limitations": "Historical recorded results; this release did not perform new visual annotation or independent review."
+}

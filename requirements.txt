@@ -1,0 +1,7 @@
+# Frozen scoring and data-format utilities use Python >=3.10 and the standard library.
+# Optional dependencies for the original leaderboard CLI and regression tests:
+matplotlib>=3.6
+pytest>=7
+
+# Metadata-only and selected-video Hugging Face downloads, including the hf CLI.
+huggingface_hub>=0.34

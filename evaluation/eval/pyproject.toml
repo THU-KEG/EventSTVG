@@ -1,0 +1,12 @@
+[project]
+name = "role-stvg-eval"
+version = "1.0.0"
+description = "Frozen production evaluator for Role-STVG"
+requires-python = ">=3.10"
+
+[project.scripts]
+role-stvg-eval = "role_stvg_eval.cli:main"
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]

@@ -1,0 +1,99 @@
+{
+  "protocol_id": "Role-STVG-PTD-64f-v2",
+  "frozen_at_utc": "2026-09-07T12:41:15.538956+00:00",
+  "state": "FROZEN",
+  "model": {
+    "name": "released PTD Qwen3-VL-4B",
+    "checkpoint": "external_data/models/ParallelTubeDecoding-Qwen3-VL-4B",
+    "ptd_code": "external_data/models/ParallelTubeDecoding",
+    "python": "external_data/models/STVG-R1-7B/ptd_role_stvg_smoke/env/bin/python",
+    "dtype": "float16",
+    "attention": "sdpa",
+    "checkpoint_time_token_capacity": 100
+  },
+  "execution": {
+    "worker_count": 1,
+    "cuda_allocator": "expandable_segments:True",
+    "cuda_allocator_reason": "prevent reserved-memory fragmentation across sequential calls; does not alter model inference semantics",
+    "settings_run_sequentially": [
+      "oracle",
+      "context_1min"
+    ],
+    "max_new_tokens": 1024,
+    "temperature": 0.0,
+    "generation_format": "spatio_temporal_grounding",
+    "evaluate_gt_during_inference": false
+  },
+  "video": {
+    "operating_point": "PTD-64f",
+    "oracle": "full clip; all distinct frames when source_frame_count <= 64, otherwise exactly 64 uniform distinct frames over the full clip",
+    "context_1min": "exactly 64 uniform distinct frames over the complete video, including first and last source frames",
+    "sampling_algorithm": "torch.linspace(0, source_frame_count-1, input_frame_count).round().long()",
+    "temporal_patch_size": 1,
+    "min_pixels": 131072,
+    "max_pixels": 786432,
+    "no_crop_or_windowing": true,
+    "no_duplicate_frames": true
+  },
+  "roles": {
+    "calls": "one independent sequential PTD inference per semantic role",
+    "same_sample_frames_reused_for_all_roles": true,
+    "adapter_inputs": [
+      "frozen event_type",
+      "frozen role_key",
+      "frozen semantic role definition"
+    ],
+    "adapter_rule": "strip one terminal period from the frozen role definition and lowercase only its first character",
+    "native_prompt_wrapper": "Given the query: '{query}' Localize the described object throughout the video. Use object reference tokens, time tokens, and box tokens. Return the object reference, event time segment, and per-time bbox coordinates.",
+    "gt_dependent_query_construction": false,
+    "sample_specific_query_writing": false,
+    "template_count": 33,
+    "role_key_count": 16
+  },
+  "inputs": {
+    "oracle_manifest": "research/bench/prompt/oracle.jsonl",
+    "context_1min_manifest": "research/bench/prompt/1min_context.jsonl",
+    "oracle_video_root": "research/bench/data",
+    "context_1min_video_root": "external_data/RoleSTVG/core_corrected_v2_boundary_clamp/context_1min/videos",
+    "manifest_sha256": {
+      "oracle": "4fa1da16a2db1963b2d1ffabcdb9ce7863c2717da825e7395e93698d5f22901f",
+      "context_1min": "30d7071e8962e977e877a11d4de5286477b006f1702e9163c9463621831cc57d"
+    },
+    "sample_counts": {
+      "oracle": 3516,
+      "context_1min": 3516
+    },
+    "role_call_counts": {
+      "oracle": 6497,
+      "context_1min": 6497
+    }
+  },
+  "outputs": {
+    "root": "research/bench/PTD",
+    "oracle": "research/bench/PTD/oracle",
+    "context_1min": "research/bench/PTD/context_1min",
+    "statuses": [
+      "OK",
+      "EMPTY",
+      "MALFORMED",
+      "REQUEST_FAILURE",
+      "CUDA_OOM"
+    ],
+    "raw_native_output_preserved": true,
+    "resume_safe_atomic_per_role_records": true
+  },
+  "dry_run_cases": [
+    {
+      "setting": "oracle",
+      "sample_id": "england_epl/2014-2015/2015-02-21 - 18-00 Crystal Palace 1 - 2 Arsenal/Corner_H1_1245187_w2"
+    },
+    {
+      "setting": "oracle",
+      "sample_id": "england_epl/2014-2015/2015-02-21 - 18-00 Crystal Palace 1 - 2 Arsenal/Throw-in_H1_1003752"
+    },
+    {
+      "setting": "context_1min",
+      "sample_id": "england_epl/2014-2015/2015-02-21 - 18-00 Crystal Palace 1 - 2 Arsenal/Corner_H1_1245187_w2"
+    }
+  ]
+}

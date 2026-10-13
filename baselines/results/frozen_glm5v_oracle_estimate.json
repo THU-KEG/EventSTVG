@@ -1,0 +1,19 @@
+{
+  "model": "GLM-5V-Turbo",
+  "setting": "oracle",
+  "metric": "m_vIoU",
+  "frozen_value_pct": 10.32,
+  "unrounded_projection_pct": 10.321774035162663,
+  "score_type": "estimated",
+  "target_N": 3516,
+  "observed_N": 934,
+  "parsed_N": 769,
+  "observed_actual_m_vIoU_pct": 9.011062214436215,
+  "future_regime": "old679",
+  "assumption": "Keep all 934 observed outcomes fixed; extrapolate remaining 2582 with old679 event-specific response success rates and cumulative parsed within-event quality.",
+  "authorization": "User explicitly selected 10.32 and requested freezing it into the main table.",
+  "display_marker": "asterisk",
+  "R03_R05": null,
+  "projection_source": "research/bench/analysis/soccer_oracle_model_study/glm5v_extrapolation/results.json",
+  "projection_source_sha256": "8ff6ee121eb1ef4a14d6bd43b81dce10fee3d427ab0a26439bc36acbdf4cb3ff"
+}

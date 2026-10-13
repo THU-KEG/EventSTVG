@@ -1,0 +1,66 @@
+{
+  "school_gateway": {
+    "protocol": "provider_defaults",
+    "model_aliases": [
+      "Qwen3.8-Max",
+      "Qwen3.7-Plus",
+      "MiniMax-M3",
+      "GLM-4.6V",
+      "glm-5.3-flash"
+    ],
+    "input_mode": "original MP4 in video_url",
+    "client_fps": null,
+    "client_resize": null,
+    "generation_parameters": {},
+    "note": "Provider internal sampling, resolution, checkpoint revisions are not recorded."
+  },
+  "gpt_openrouter": {
+    "model": "openai/gpt-5.6-sol",
+    "provider": "OpenAI",
+    "input_mode": "ordered image_url frames",
+    "fps": 2.0,
+    "max_frames": 1200,
+    "resize": [
+      512,
+      288
+    ],
+    "jpeg_quality": 80,
+    "image_detail": "low",
+    "generation_parameters": {},
+    "note": "A separate detail-omitted one-minute experiment also exists; do not merge it silently."
+  },
+  "gemini_recorded": {
+    "model": "gemini-3.7-flash",
+    "input_mode": "Google sampled JPEG frames",
+    "fps": 2.0,
+    "resize": [
+      512,
+      288
+    ],
+    "jpeg_quality": 85,
+    "native_bbox_order": "yxyx",
+    "note": "Oracle/1min initial rows record max_frames=900 and optional max_output_tokens,response_mime_type; later 3/5/10 rows record no optional model fields. Exact Google runner and full generation settings remain to be recovered."
+  },
+  "qwen_local": {
+    "model": "qwen3.5-9b",
+    "checkpoint_name": "Qwen3.5-9B",
+    "revision": null,
+    "enable_thinking": false,
+    "max_new_tokens": 4096,
+    "do_sample": false,
+    "sampling": "native processor defaults; not pinned"
+  },
+  "ptd": {
+    "protocol_id": "Role-STVG-PTD-64f-v2",
+    "checkpoint": "released PTD Qwen3-VL-4B",
+    "frames": 64,
+    "min_pixels": 131072,
+    "max_pixels": 786432,
+    "dtype": "float16",
+    "attention": "sdpa",
+    "max_new_tokens": 1024,
+    "temperature": 0.0,
+    "worker_count": 1,
+    "frozen_at_utc": "2026-09-07T12:41:15.538956+00:00"
+  }
+}

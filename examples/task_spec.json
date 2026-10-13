@@ -1,0 +1,294 @@
+{
+  "version": "role-stvg-prompt-v1.17",
+  "source_document": "PROMPT.md",
+  "setting_task_contexts": {
+    "oracle": "You are given a manually annotated and temporally trimmed soccer video clip of **{event_name}**.\nThe entire clip is the annotated temporal window of the target event instance,\nfrom its annotated start to its annotated end.  No temporal localization is required.",
+    "context_1min": "You are given a one-minute soccer video. Locate the **{occurrence_phrase} of {event_name}** and determine its temporal window using the event-specific boundary, with times measured from the beginning of the input video rather than the on-screen match clock. Then localize the specified semantic role(s) within that window.",
+    "context_3min": "You are given a three-minute soccer video. Locate the **{occurrence_phrase} of {event_name}** and determine its temporal window using the event-specific boundary, with times measured from the beginning of the input video rather than the on-screen match clock. Then localize the specified semantic role(s) within that window.",
+    "context_5min": "You are given a five-minute soccer video. Locate the **{occurrence_phrase} of {event_name}** and determine its temporal window using the event-specific boundary, with times measured from the beginning of the input video rather than the on-screen match clock. Then localize the specified semantic role(s) within that window.",
+    "context_10min": "You are given a ten-minute soccer video. Locate the **{occurrence_phrase} of {event_name}** and determine its temporal window using the event-specific boundary, with times measured from the beginning of the input video rather than the on-screen match clock. Then localize the specified semantic role(s) within that window."
+  },
+  "events": {
+    "corner_won": {
+      "name": "Corner Won",
+      "definition": "An attacking sequence that results in the ball crossing the goal line, without a goal being scored, after being last touched by the defending team, thereby awarding a corner kick to the attacking team.",
+      "role_definitions": {
+        "corner_winner": "The attacking player whose action directly leads to the corner being awarded.",
+        "corner_conceder": "The defending player whose touch or defensive action directly results in the corner being awarded."
+      },
+      "predicate_order": [
+        "corner_winner",
+        "corner_conceder"
+      ],
+      "predicate": "corner_won",
+      "temporal_boundary": "The **temporal window to be localized** starts when the **corner winner first gains possession of the ball during the attacking sequence of the target corner**, allowing subsequent dribbling, crossing, passing, or shooting. It ends when, after the **defending team makes the final touch, block, or clearance**, the ball crosses the goal line and the corner outcome becomes clear."
+    },
+    "corner_kick": {
+      "name": "Corner Kick",
+      "definition": "The restart of play in which the attacking team puts the ball back into play from the corner area after a corner has been awarded.",
+      "role_definitions": {
+        "corner_taker": "The attacking player who takes the target corner kick."
+      },
+      "predicate_order": [
+        "corner_taker"
+      ],
+      "predicate": "corner_kick",
+      "temporal_boundary": "The **temporal window to be localized** starts when the video is in a standard broadcast view and the **corner taker begins taking the corner kick**. It ends after the corner is taken when the **ball is first touched by a player other than the corner taker or goes out of play**."
+    },
+    "shot_on_target": {
+      "name": "Shot on Target",
+      "definition": "An attacking sequence culminating in an intentional attempt to score that is directed toward the goal and either results in a goal or is prevented from entering the goal.",
+      "role_definitions": {
+        "last_passer": "The attacking player who makes the final effective pass to the shooter before the shot.",
+        "shooter": "The attacking player who takes the shot.",
+        "goalkeeper": "The goalkeeper defending the goal against the shot."
+      },
+      "predicate_order": [
+        "last_passer",
+        "shooter",
+        "goalkeeper"
+      ],
+      "predicate": "shoot",
+      "predicate_with_last_passer": "last_passer — pass — shooter — shoot — goalkeeper",
+      "predicate_without_last_passer": "shooter — shoot — goalkeeper",
+      "predicate_with_last_passer_without_goalkeeper": "last_passer — pass — shooter — shoot",
+      "predicate_without_last_passer_or_goalkeeper": "shooter — shoot",
+      "temporal_boundary_with_last_passer": "The **temporal window to be localized** starts when the **last passer first gains possession of the ball during the attacking sequence of the target shot**, allowing subsequent dribbling. The window ends when the **outcome of the shot becomes clear**.",
+      "temporal_boundary_without_last_passer": "The **temporal window to be localized** starts when the **shooter first gains possession of the ball during the attacking sequence of the target shot or begins direct preparation for the shot**, allowing subsequent dribbling when applicable. The window ends when the **outcome of the shot becomes clear**."
+    },
+    "shot_off_target": {
+      "name": "Shot off Target",
+      "definition": "An attacking sequence culminating in an intentional attempt to score where the resulting shot is off target.",
+      "role_definitions": {
+        "last_passer": "The attacking player who makes the final effective pass to the shooter before the shot.",
+        "shooter": "The attacking player who takes the shot.",
+        "goalkeeper": "The goalkeeper defending the goal targeted by the attacking sequence."
+      },
+      "predicate_order": [
+        "last_passer",
+        "shooter",
+        "goalkeeper"
+      ],
+      "predicate": "shoot",
+      "predicate_with_last_passer": "last_passer — pass — shooter — shoot — goalkeeper",
+      "predicate_without_last_passer": "shooter — shoot — goalkeeper",
+      "predicate_with_last_passer_without_goalkeeper": "last_passer — pass — shooter — shoot",
+      "predicate_without_last_passer_or_goalkeeper": "shooter — shoot",
+      "temporal_boundary_with_last_passer": "The **temporal window to be localized** starts when the **last passer first gains possession of the ball during the attacking sequence of the target shot**, allowing subsequent dribbling. The window ends when the **outcome of the shot becomes clear**.",
+      "temporal_boundary_without_last_passer": "The **temporal window to be localized** starts when the **shooter first gains possession of the ball during the attacking sequence of the target shot or begins direct preparation for the shot**, allowing subsequent dribbling when applicable. The window ends when the **outcome of the shot becomes clear**."
+    },
+    "goal": {
+      "name": "Goal",
+      "definition": "An attacking sequence culminating in a valid goal, where the ball completely crosses the goal line between the goalposts and under the crossbar.",
+      "role_definitions": {
+        "last_passer": "The attacking player who makes the final effective pass to the shooter before the target goal.",
+        "shooter": "The attacking player whose shot results in the target goal.",
+        "goalkeeper": "The goalkeeper defending the goal in which the target goal is scored."
+      },
+      "predicate_order": [
+        "last_passer",
+        "shooter",
+        "goalkeeper"
+      ],
+      "predicate": "shoot",
+      "predicate_with_last_passer": "last_passer — pass — shooter — shoot — goalkeeper",
+      "predicate_without_last_passer": "shooter — shoot — goalkeeper",
+      "predicate_with_last_passer_without_goalkeeper": "last_passer — pass — shooter — shoot",
+      "predicate_without_last_passer_or_goalkeeper": "shooter — shoot",
+      "temporal_boundary_with_last_passer": "The **temporal window to be localized** starts when the **last passer first gains possession of the ball during the attacking sequence of the target goal**, allowing subsequent dribbling. The window ends when the **goal outcome becomes clear**.",
+      "temporal_boundary_without_last_passer": "The **temporal window to be localized** starts when the **shooter first gains possession of the ball during the attacking sequence of the target goal or begins direct preparation for the shot**, allowing subsequent dribbling when applicable. The window ends when the **goal outcome becomes clear**."
+    },
+    "throw_in": {
+      "name": "Throw-in",
+      "definition": "A restart of play in which the ball is thrown back into the field after having crossed the touchline and a throw-in has been awarded.",
+      "role_definitions": {
+        "throw_in_taker": "The player who takes the target throw-in."
+      },
+      "predicate_order": [
+        "throw_in_taker"
+      ],
+      "predicate": "throw_in",
+      "temporal_boundary": "The **temporal window to be localized** starts when the video is in a standard broadcast view with the **throw-in player and the ball visible**. It ends after the ball is thrown back into play when the **ball is first touched or controlled by a player other than the throw-in player**."
+    },
+    "goal_kick": {
+      "name": "Goal Kick",
+      "definition": "A restart of play awarded to the defending team after the ball crosses the goal line without a goal being scored, having last been touched by the attacking team.",
+      "role_definitions": {
+        "goalkeeper": "The goalkeeper who takes the target goal kick."
+      },
+      "predicate_order": [
+        "goalkeeper"
+      ],
+      "predicate": "goal_kick",
+      "temporal_boundary": "The **temporal window to be localized** starts when the video is in a standard broadcast view and the **goalkeeper begins taking the goal kick**. It ends when the **ball is first touched or controlled by a player other than the goalkeeper**."
+    },
+    "kick_off": {
+      "name": "Kick-off",
+      "definition": "A restart from the center of the field used to begin a half or to resume play after a goal.",
+      "role_definitions": {
+        "kick_off_taker": "The player who takes the target kick-off."
+      },
+      "predicate_order": [
+        "kick_off_taker"
+      ],
+      "predicate": "kick_off",
+      "temporal_boundary": "The **temporal window to be localized** starts when the **kick-off taker and the ball are visible in the standard broadcast view and the kick-off taker enters the actual kick-off process**. It ends when the **ball is first touched or controlled by a player other than the kick-off taker**."
+    },
+    "offside": {
+      "name": "Offside",
+      "definition": "An attacking sequence that results in play being stopped because an attacking player is judged to have committed an offside offence, typically indicated by the assistant referee raising the flag.",
+      "role_definitions": {
+        "offside_passer": "The attacking player who makes the pass associated with the target offside event.",
+        "offside_player": "The attacking player who is judged to have committed the target offside offence.",
+        "second_last_defender": "The second-last defending player relative to the defending goal line when the offside pass is made, serving as the reference defender for the target offside event."
+      },
+      "predicate_order": [
+        "offside_passer",
+        "offside_player",
+        "second_last_defender"
+      ],
+      "predicate": "offside",
+      "temporal_boundary": "The **temporal window to be localized** starts when the **offside passer first gains possession of the ball during the attacking sequence of the target offside event**, allowing subsequent dribbling before passing the ball to the offside player. It ends when the **offside decision becomes clear and the referee stops the current attacking phase**."
+    },
+    "indirect_free_kick": {
+      "name": "Indirect Free-kick",
+      "definition": "The restart of play following an offside decision, in which the defending team puts the ball back into play with an indirect free-kick. Can look similar to a goal kick",
+      "role_definitions": {
+        "indirect_free_kick_taker": "The player who takes the target indirect free-kick following the offside decision."
+      },
+      "predicate_order": [
+        "indirect_free_kick_taker"
+      ],
+      "predicate": "indirect_free_kick",
+      "temporal_boundary": "The **temporal window to be localized** starts when the video is in a standard broadcast view and the **indirect free-kick taker begins taking the indirect free-kick**. It ends when the **ball is first touched or controlled by a player other than the indirect free-kick taker**."
+    },
+    "foul_direct_free_kick": {
+      "name": "Foul Leading to Direct Free-kick",
+      "definition": "A foul committed during open play that results in the opposing team being awarded a direct free-kick.",
+      "role_definitions": {
+        "foul_committer": "The player who commits the target foul.",
+        "fouled_player": "The opposing player who is fouled in the target event."
+      },
+      "predicate_order": [
+        "foul_committer",
+        "fouled_player"
+      ],
+      "predicate": "foul",
+      "temporal_boundary": "If the fouled player is in possession of the ball, the **temporal window to be localized** starts when the **fouled player first gains possession during the target foul sequence**, allowing subsequent dribbling. If the foul occurs off the ball, the window starts when the **fouled player begins a direct contest, positional duel, or physical contact with the fouler**. It ends when the **foul action occurs and the foul decision becomes clear**."
+    },
+    "direct_free_kick": {
+      "name": "Direct Free-kick",
+      "definition": "The restart of play in which a direct free-kick is taken following the corresponding foul decision, with an attempt to score directly, including situations in which the defending team forms a defensive wall.",
+      "role_definitions": {
+        "direct_free_kick_taker": "The player who takes the target direct free-kick.",
+        "goalkeeper": "The goalkeeper defending the goal against the target direct free-kick."
+      },
+      "predicate_order": [
+        "direct_free_kick_taker",
+        "goalkeeper"
+      ],
+      "predicate": "direct_free_kick",
+      "temporal_boundary": "The **temporal window to be localized** starts when the video is in a standard broadcast view and the **direct free-kick taker begins taking the direct free-kick**. It ends when the **outcome of the direct free-kick becomes clear**, including when a goal is scored or when the ball goes out of play or first touched by a player other than the direct free-kick taker."
+    },
+    "foul_penalty": {
+      "name": "Foul Leading to Penalty",
+      "definition": "A foul committed by the defending team that results in the attacking team being awarded a penalty kick.",
+      "role_definitions": {
+        "foul_committer": "The defending player who commits the target foul.",
+        "fouled_player": "The attacking player who is fouled in the target event."
+      },
+      "predicate_order": [
+        "foul_committer",
+        "fouled_player"
+      ],
+      "predicate": "foul",
+      "temporal_boundary": "If the fouled player is in possession of the ball, the **temporal window to be localized** starts when the **fouled player first gains possession during the target foul sequence**, allowing subsequent dribbling. If the foul occurs off the ball, the window starts when the **fouled player begins a direct contest, positional duel, or physical contact with the fouler**. It ends when the **foul action occurs and the foul decision becomes clear**."
+    },
+    "penalty_kick": {
+      "name": "Penalty Kick",
+      "definition": "The penalty-kick procedure following a penalty decision, culminating in the kick from the penalty mark.",
+      "role_definitions": {
+        "penalty_taker": "The player who takes the target penalty kick.",
+        "goalkeeper": "The goalkeeper defending the goal against the target penalty kick."
+      },
+      "predicate_order": [
+        "penalty_taker",
+        "goalkeeper"
+      ],
+      "predicate": "penalty_kick",
+      "temporal_boundary": "The **temporal window to be localized** starts when the video is in a standard broadcast view and the **penalty taker begins taking the penalty kick**. It ends when the **outcome of the penalty kick becomes clear**, including when a goal is scored or when the ball is first touched or controlled by a player other than the penalty taker."
+    },
+    "foul_yellow_card": {
+      "name": "Foul Leading to Yellow Card",
+      "definition": "A foul that results in the offending player receiving a yellow card.",
+      "role_definitions": {
+        "foul_committer": "The player who commits the target foul and receives the resulting yellow card.",
+        "fouled_player": "The opposing player who is fouled in the target event."
+      },
+      "predicate_order": [
+        "foul_committer",
+        "fouled_player"
+      ],
+      "predicate": "foul",
+      "temporal_boundary": "If the fouled player is in possession of the ball, the **temporal window to be localized** starts when the **fouled player first gains possession during the target foul sequence**, allowing subsequent dribbling. If the foul occurs off the ball, the window starts when the **fouled player begins a direct contest, positional duel, or physical contact with the fouler**. It ends when the **foul action occurs and the foul decision becomes clear**."
+    },
+    "foul_red_card": {
+      "name": "Foul Leading to Red Card",
+      "definition": "A foul that results in the offending player receiving a direct red card.",
+      "role_definitions": {
+        "foul_committer": "The player who commits the target foul and receives the resulting direct red card.",
+        "fouled_player": "The opposing player who is fouled in the target event."
+      },
+      "predicate_order": [
+        "foul_committer",
+        "fouled_player"
+      ],
+      "predicate": "foul",
+      "temporal_boundary": "If the fouled player is in possession of the ball, the **temporal window to be localized** starts when the **fouled player first gains possession during the target foul sequence**, allowing subsequent dribbling. If the foul occurs off the ball, the window starts when the **fouled player begins a direct contest, positional duel, or physical contact with the fouler**. It ends when the **foul action occurs and the foul decision becomes clear**."
+    },
+    "foul_second_yellow_red_card": {
+      "name": "Foul Leading to Second Yellow and Red Card",
+      "definition": "A foul that results in the offending player receiving a second yellow card and the consequent red card.",
+      "role_definitions": {
+        "foul_committer": "The player who commits the target foul and receives the second yellow card and consequent red card.",
+        "fouled_player": "The opposing player who is fouled in the target event."
+      },
+      "predicate_order": [
+        "foul_committer",
+        "fouled_player"
+      ],
+      "predicate": "foul",
+      "temporal_boundary": "If the fouled player is in possession of the ball, the **temporal window to be localized** starts when the **fouled player first gains possession during the target foul sequence**, allowing subsequent dribbling. If the foul occurs off the ball, the window starts when the **fouled player begins a direct contest, positional duel, or physical contact with the fouler**. It ends when the **foul action occurs and the foul decision becomes clear**."
+    }
+  },
+  "rules": {
+    "oracle": "- Track the same player for each role throughout the event. If not reliably visible, output `null`; resume the same player when visible again.\n- At each of the following timestamps, measured from the beginning of the input video, output a tight bounding box for each role-bearing person as `[xmin, ymin, xmax, ymax]`, normalized to `[0,1000]`, with the origin at the top-left:\n  {oracle_timestamps}\n  Use each listed timestamp exactly once and do not add other timestamps.",
+    "context": "- Track the same player for each role throughout the event. If not reliably visible, output `null`; resume the same player when visible again.\n- The window must remain within a continuous standard broadcast view and must not cross a cut or non-standard view.\n- Starting at `temporal_window.start_sec`, output role localization every 0.5 seconds (`temporal_window.start_sec`, `temporal_window.start_sec + 0.5`, ...), without exceeding `temporal_window.end_sec`.\n- At each timestamp, output a tight bounding box for each role-bearing person as `[xmin, ymin, xmax, ymax]`, normalized to `[0,1000]`, with the origin at the top-left."
+  },
+  "strict_schema_rules": {
+    "oracle": "Return only the JSON array strictly in the format below:",
+    "context": "Return only the JSON object strictly in the format below:"
+  },
+  "schema_templates": {
+    "oracle": "[\n  {\n    \"time_sec\": <number>,\n    \"<role_1>\": [xmin, ymin, xmax, ymax] or null,\n    \"<role_2>\": [xmin, ymin, xmax, ymax] or null\n  }\n]",
+    "context": "{\n  \"temporal_window\": {\n    \"start_sec\": <number>,\n    \"end_sec\": <number>\n  },\n  \"role_localization\": [\n    {\n      \"time_sec\": <number>,\n      \"<role_1>\": [xmin, ymin, xmax, ymax] or null,\n      \"<role_2>\": [xmin, ymin, xmax, ymax] or null\n    }\n  ]\n}"
+  },
+  "release_conventions": {
+    "time_unit": "seconds",
+    "answer_time_reference": "beginning of the input video, not the on-screen match clock",
+    "source_window_time_reference": "beginning of source_half_video",
+    "sampling": "nominal 2 Hz: Oracle time_sec = k * 0.5; context time_sec = target_start_in_window + k * 0.5; retain the explicitly annotated support only",
+    "original_spatial_frame_index": "zero-based in the original Oracle event clip; round_half_up(fps_original * 0.5 * k)",
+    "original_spatial_time_sec": "actual original event-clip frame_index / fps_original; may differ from nominal half-second timestamps",
+    "answer_bbox_format": "xyxy_normalized_0_1000",
+    "answer_bbox_origin": "top-left",
+    "answer_bbox_normalization": "[1000*xmin/width, 1000*ymin/height, 1000*xmax/width, 1000*ymax/height]",
+    "original_spatial_bbox_format": "xyxy in original_video_pixels; dimensions and frame IDs retained in spatial_annotation",
+    "null": "an explicit null for a requested role at a timestamp has the existing benchmark meaning of no reliable localization; it is distinct from missing or invalid prediction fields",
+    "sample_identity": "sample_id is unchanged and shared across all five settings",
+    "model_input": "video plus complete official prompt; answer, spatial_annotation and GT/source timing metadata must not be sent as model input",
+    "metadata_file_name_reference": "relative to the directory containing this metadata.jsonl",
+    "prompt_spec_original_sha256": "a770574e4054205181886e0b4158079af1f8c1e61ef9ee90bab73a26ebe65a50",
+    "source_prompt_spec_path": "soccerrole/prompt_spec.json"
+  }
+}

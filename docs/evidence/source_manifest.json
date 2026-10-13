@@ -1,0 +1,598 @@
+[
+  {
+    "source": "eval/EVAL_POLICY.md",
+    "destination": "evaluation/eval/EVAL_POLICY.md",
+    "source_sha256": "09eed11153a81a57a92d13f70b22b77b818131cf035690689a678d759fea8b37",
+    "release_sha256": "09eed11153a81a57a92d13f70b22b77b818131cf035690689a678d759fea8b37",
+    "modified": false
+  },
+  {
+    "source": "eval/pyproject.toml",
+    "destination": "evaluation/eval/pyproject.toml",
+    "source_sha256": "923a02946e39f99b345c01aefb93cac2f232b17b6981f30cc8f1449ed32bd7ba",
+    "release_sha256": "923a02946e39f99b345c01aefb93cac2f232b17b6981f30cc8f1449ed32bd7ba",
+    "modified": false
+  },
+  {
+    "source": "eval/README.md",
+    "destination": "evaluation/eval/README.md",
+    "source_sha256": "738ef858566b7da5b8bbeee4650d24a8a81b7e23df7fd4293e83998e7b947e56",
+    "release_sha256": "738ef858566b7da5b8bbeee4650d24a8a81b7e23df7fd4293e83998e7b947e56",
+    "modified": false
+  },
+  {
+    "source": "eval/VERSION",
+    "destination": "evaluation/eval/VERSION",
+    "source_sha256": "4e3655674268d4287f9f63148777eeb0ca57f35f201d3e03c9392203efaae82f",
+    "release_sha256": "4e3655674268d4287f9f63148777eeb0ca57f35f201d3e03c9392203efaae82f",
+    "modified": false
+  },
+  {
+    "source": "eval/FINAL_EVALUATOR_FREEZE.md",
+    "destination": "evaluation/eval/FINAL_EVALUATOR_FREEZE.md",
+    "source_sha256": "d1864b3954285de6af9a91e42ce0853a10967ad8cd36e8017a152fd71b7cef39",
+    "release_sha256": "3edcc6a135920406efbd934e9769d87cf771e7d3059d3eeaacea6b0393ed81b8",
+    "modified": true
+  },
+  {
+    "source": "eval/role_stvg_eval/aggregate.py",
+    "destination": "evaluation/eval/role_stvg_eval/aggregate.py",
+    "source_sha256": "dcebe8f4a316e819d82760d5fc176518cd8619dbc0527dfe07d486166d7ccad9",
+    "release_sha256": "dcebe8f4a316e819d82760d5fc176518cd8619dbc0527dfe07d486166d7ccad9",
+    "modified": false
+  },
+  {
+    "source": "eval/role_stvg_eval/version.py",
+    "destination": "evaluation/eval/role_stvg_eval/version.py",
+    "source_sha256": "86d90e20d25a37d3d4cabf3ba4e4bfc1b0b2628b198925ac3d46ba9b4a10b302",
+    "release_sha256": "86d90e20d25a37d3d4cabf3ba4e4bfc1b0b2628b198925ac3d46ba9b4a10b302",
+    "modified": false
+  },
+  {
+    "source": "eval/role_stvg_eval/cli.py",
+    "destination": "evaluation/eval/role_stvg_eval/cli.py",
+    "source_sha256": "da1c73232d061148807d16dc7beaeba8c4a614b062a2bacecce448dc30dfa091",
+    "release_sha256": "da1c73232d061148807d16dc7beaeba8c4a614b062a2bacecce448dc30dfa091",
+    "modified": false
+  },
+  {
+    "source": "eval/role_stvg_eval/io.py",
+    "destination": "evaluation/eval/role_stvg_eval/io.py",
+    "source_sha256": "dbb3d5dc69628e86716a286e3c3023fe68eeb5c3f51023c64d3d2487c91c70d3",
+    "release_sha256": "dbb3d5dc69628e86716a286e3c3023fe68eeb5c3f51023c64d3d2487c91c70d3",
+    "modified": false
+  },
+  {
+    "source": "eval/role_stvg_eval/validation.py",
+    "destination": "evaluation/eval/role_stvg_eval/validation.py",
+    "source_sha256": "213786d08ab69e7b790c0cc30b362b08e08b9bc2b71b130dbc79240e62ab29cf",
+    "release_sha256": "213786d08ab69e7b790c0cc30b362b08e08b9bc2b71b130dbc79240e62ab29cf",
+    "modified": false
+  },
+  {
+    "source": "eval/role_stvg_eval/provenance.py",
+    "destination": "evaluation/eval/role_stvg_eval/provenance.py",
+    "source_sha256": "db3b4707df313c299c8cfc5a1328e5c86ef9030ad7363761c97ed67b1e8651d6",
+    "release_sha256": "db3b4707df313c299c8cfc5a1328e5c86ef9030ad7363761c97ed67b1e8651d6",
+    "modified": false
+  },
+  {
+    "source": "eval/role_stvg_eval/temporal.py",
+    "destination": "evaluation/eval/role_stvg_eval/temporal.py",
+    "source_sha256": "d34a0a2d1823d7aaf524c0f760495d8b2d286f15cc757a05b7802be551beb70d",
+    "release_sha256": "d34a0a2d1823d7aaf524c0f760495d8b2d286f15cc757a05b7802be551beb70d",
+    "modified": false
+  },
+  {
+    "source": "eval/role_stvg_eval/metrics.py",
+    "destination": "evaluation/eval/role_stvg_eval/metrics.py",
+    "source_sha256": "49e71aab6a4cd75b2ffa37d784c0d69440c39b880b5071dbcf2d78d691aa9bb6",
+    "release_sha256": "49e71aab6a4cd75b2ffa37d784c0d69440c39b880b5071dbcf2d78d691aa9bb6",
+    "modified": false
+  },
+  {
+    "source": "eval/role_stvg_eval/regression.py",
+    "destination": "evaluation/eval/role_stvg_eval/regression.py",
+    "source_sha256": "d58c9aafd2a740e7cb8fb9dd5876e972fdfc89545ebd85bf27a61be1232cb5ed",
+    "release_sha256": "d58c9aafd2a740e7cb8fb9dd5876e972fdfc89545ebd85bf27a61be1232cb5ed",
+    "modified": false
+  },
+  {
+    "source": "eval/role_stvg_eval/diagnostics.py",
+    "destination": "evaluation/eval/role_stvg_eval/diagnostics.py",
+    "source_sha256": "80815ab7e9e5c2a545f9b05fac2be5aa84baf6ad7edd98e4fc041cc5a54c36a6",
+    "release_sha256": "80815ab7e9e5c2a545f9b05fac2be5aa84baf6ad7edd98e4fc041cc5a54c36a6",
+    "modified": false
+  },
+  {
+    "source": "eval/role_stvg_eval/boxes.py",
+    "destination": "evaluation/eval/role_stvg_eval/boxes.py",
+    "source_sha256": "abe03a5794fb2a496e7526963af1a67f631905eefeb0dc22756e585e4a5aa306",
+    "release_sha256": "abe03a5794fb2a496e7526963af1a67f631905eefeb0dc22756e585e4a5aa306",
+    "modified": false
+  },
+  {
+    "source": "eval/role_stvg_eval/parsing.py",
+    "destination": "evaluation/eval/role_stvg_eval/parsing.py",
+    "source_sha256": "143a992a21cad9d87e4e9dc36a19690d9426ae66059bee8771473423856ada0d",
+    "release_sha256": "143a992a21cad9d87e4e9dc36a19690d9426ae66059bee8771473423856ada0d",
+    "modified": false
+  },
+  {
+    "source": "eval/role_stvg_eval/__main__.py",
+    "destination": "evaluation/eval/role_stvg_eval/__main__.py",
+    "source_sha256": "42db9ceb6cdf0d9cda127d1668096ce10f2a801a0c4eb7ffc304d549c5c39c33",
+    "release_sha256": "42db9ceb6cdf0d9cda127d1668096ce10f2a801a0c4eb7ffc304d549c5c39c33",
+    "modified": false
+  },
+  {
+    "source": "eval/role_stvg_eval/__init__.py",
+    "destination": "evaluation/eval/role_stvg_eval/__init__.py",
+    "source_sha256": "8b03fbd07014d83baf325a65775a3f9b92ef250f75926161e8d2b228457ab959",
+    "release_sha256": "8b03fbd07014d83baf325a65775a3f9b92ef250f75926161e8d2b228457ab959",
+    "modified": false
+  },
+  {
+    "source": "eval/role_stvg_eval/render.py",
+    "destination": "evaluation/eval/role_stvg_eval/render.py",
+    "source_sha256": "d37a03894b7a33290a881ec437d3028dfa301da48fd3c48aaf992efb42c304b9",
+    "release_sha256": "d37a03894b7a33290a881ec437d3028dfa301da48fd3c48aaf992efb42c304b9",
+    "modified": false
+  },
+  {
+    "source": "eval/tests/test_aggregation.py",
+    "destination": "evaluation/eval/tests/test_aggregation.py",
+    "source_sha256": "99a5db8c9472e3ef4905f5b45a26355b7fa008a0bbd063b5f542feb5f7612576",
+    "release_sha256": "99a5db8c9472e3ef4905f5b45a26355b7fa008a0bbd063b5f542feb5f7612576",
+    "modified": false
+  },
+  {
+    "source": "eval/tests/test_parser_refresh.py",
+    "destination": "evaluation/eval/tests/test_parser_refresh.py",
+    "source_sha256": "ba72fd40dafcdba46d794785c24d4c834700e2c0ae601c864a117df9e414339c",
+    "release_sha256": "ba72fd40dafcdba46d794785c24d4c834700e2c0ae601c864a117df9e414339c",
+    "modified": false
+  },
+  {
+    "source": "eval/tests/test_boxes.py",
+    "destination": "evaluation/eval/tests/test_boxes.py",
+    "source_sha256": "e05b831af405630295b4446d26470caa6415c509b57e407f4c5acf42cf980662",
+    "release_sha256": "e05b831af405630295b4446d26470caa6415c509b57e407f4c5acf42cf980662",
+    "modified": false
+  },
+  {
+    "source": "eval/tests/test_split_render.py",
+    "destination": "evaluation/eval/tests/test_split_render.py",
+    "source_sha256": "e4cff7b1843464e78ba4aacc720d3bbed3ce17127810c4ce6ac5b9266ddc7a81",
+    "release_sha256": "e4cff7b1843464e78ba4aacc720d3bbed3ce17127810c4ce6ac5b9266ddc7a81",
+    "modified": false
+  },
+  {
+    "source": "eval/tests/test_temporal.py",
+    "destination": "evaluation/eval/tests/test_temporal.py",
+    "source_sha256": "77557e9383c8ffb8d84c7b0dfaab4e17d499cbc9de6efb0533f7706560bb675e",
+    "release_sha256": "77557e9383c8ffb8d84c7b0dfaab4e17d499cbc9de6efb0533f7706560bb675e",
+    "modified": false
+  },
+  {
+    "source": "eval/tests/test_thresholds.py",
+    "destination": "evaluation/eval/tests/test_thresholds.py",
+    "source_sha256": "9bfcb3880e75d410474119d0fb0a982ae5dbab183013a4675f77763fdef9b786",
+    "release_sha256": "9bfcb3880e75d410474119d0fb0a982ae5dbab183013a4675f77763fdef9b786",
+    "modified": false
+  },
+  {
+    "source": "eval/tests/test_regression.py",
+    "destination": "evaluation/eval/tests/test_regression.py",
+    "source_sha256": "ed1f6eb95be818312060cb1bcae7528e01140d75aa644d588ce4bdd78898b339",
+    "release_sha256": "ed1f6eb95be818312060cb1bcae7528e01140d75aa644d588ce4bdd78898b339",
+    "modified": false
+  },
+  {
+    "source": "eval/tests/test_role_render.py",
+    "destination": "evaluation/eval/tests/test_role_render.py",
+    "source_sha256": "3f3a5bc1dfde3c430be714037f0655481a62c55b59035171b2b25f71ee8fb12a",
+    "release_sha256": "3f3a5bc1dfde3c430be714037f0655481a62c55b59035171b2b25f71ee8fb12a",
+    "modified": false
+  },
+  {
+    "source": "eval/tests/test_timestamp_support.py",
+    "destination": "evaluation/eval/tests/test_timestamp_support.py",
+    "source_sha256": "66fa06318b961c321be25485a5ff78a3dfcd5165064c4bde81f344ad34b9696a",
+    "release_sha256": "66fa06318b961c321be25485a5ff78a3dfcd5165064c4bde81f344ad34b9696a",
+    "modified": false
+  },
+  {
+    "source": "eval/tests/test_role_identity.py",
+    "destination": "evaluation/eval/tests/test_role_identity.py",
+    "source_sha256": "723964006ca3c5fdf1cfd565e80682a56264dda718a14cf5e569b62ac453a8f5",
+    "release_sha256": "723964006ca3c5fdf1cfd565e80682a56264dda718a14cf5e569b62ac453a8f5",
+    "modified": false
+  },
+  {
+    "source": "eval/tests/test_context_validation.py",
+    "destination": "evaluation/eval/tests/test_context_validation.py",
+    "source_sha256": "27f0a2406e0f958b6708c55e72fd1c52dce99beb06f31215c21db39cdc474d6a",
+    "release_sha256": "27f0a2406e0f958b6708c55e72fd1c52dce99beb06f31215c21db39cdc474d6a",
+    "modified": false
+  },
+  {
+    "source": "eval/tests/test_parsing.py",
+    "destination": "evaluation/eval/tests/test_parsing.py",
+    "source_sha256": "be3a6672a71bd512343143e0eae87f9a2fafc9f174f8969e1ad318e3d1652636",
+    "release_sha256": "be3a6672a71bd512343143e0eae87f9a2fafc9f174f8969e1ad318e3d1652636",
+    "modified": false
+  },
+  {
+    "source": "eval/tests/test_metrics.py",
+    "destination": "evaluation/eval/tests/test_metrics.py",
+    "source_sha256": "b13b8e8f77f975ca3ffc1812b2fc0f8248f54c7b9a8e6c041f2581039bda764a",
+    "release_sha256": "b13b8e8f77f975ca3ffc1812b2fc0f8248f54c7b9a8e6c041f2581039bda764a",
+    "modified": false
+  },
+  {
+    "source": "eval/tests/test_freeze_contract.py",
+    "destination": "evaluation/eval/tests/test_freeze_contract.py",
+    "source_sha256": "94c49df29c6e7c84675d6c938db8a755b1ec91df1e27c2904d6bcb1aa117d3c0",
+    "release_sha256": "94c49df29c6e7c84675d6c938db8a755b1ec91df1e27c2904d6bcb1aa117d3c0",
+    "modified": false
+  },
+  {
+    "source": "eval/tests/test_validation.py",
+    "destination": "evaluation/eval/tests/test_validation.py",
+    "source_sha256": "9f1b6c310d36d6ae733a202feb7ba052626c2933849519840ea17b31fe0593aa",
+    "release_sha256": "9f1b6c310d36d6ae733a202feb7ba052626c2933849519840ea17b31fe0593aa",
+    "modified": false
+  },
+  {
+    "source": "bench/parser_policy.py",
+    "destination": "evaluation/bench/parser_policy.py",
+    "source_sha256": "673295f4fc9b1f12408f0408e3062cb904a6bb947847fe72ba49b51b9319d20b",
+    "release_sha256": "673295f4fc9b1f12408f0408e3062cb904a6bb947847fe72ba49b51b9319d20b",
+    "modified": false
+  },
+  {
+    "source": "bench/PARSER_POLICY.md",
+    "destination": "evaluation/bench/PARSER_POLICY.md",
+    "source_sha256": "5de56cf61bc5ad9316827967ab8cf203217003e139305c35a91bd859d84bf80c",
+    "release_sha256": "5de56cf61bc5ad9316827967ab8cf203217003e139305c35a91bd859d84bf80c",
+    "modified": false
+  },
+  {
+    "source": "EventSTVG_release/repo/evaluation/export_gt.py",
+    "destination": "evaluation/export_gt.py",
+    "source_sha256": "a81dc4edbd828c3e1447bfd5c6a406f9c0c15eca4d9336bacbdd2cd590e619f1",
+    "release_sha256": "a81dc4edbd828c3e1447bfd5c6a406f9c0c15eca4d9336bacbdd2cd590e619f1",
+    "modified": false
+  },
+  {
+    "source": "EventSTVG_release/repo/soccerstvg/task_spec.json",
+    "destination": "examples/task_spec.json",
+    "source_sha256": "c82de0deb7d6b3370d02e657b0523b10ed89b1c4f32816789585e399e1603658",
+    "release_sha256": "c82de0deb7d6b3370d02e657b0523b10ed89b1c4f32816789585e399e1603658",
+    "modified": false
+  },
+  {
+    "source": "bench/inference_platform/__init__.py",
+    "destination": "baselines/inference_platform/__init__.py",
+    "source_sha256": "3c0cd714f00e8888676e57bf5312b854aec7d3116775e16ae964e5ba5d1e1d43",
+    "release_sha256": "3c0cd714f00e8888676e57bf5312b854aec7d3116775e16ae964e5ba5d1e1d43",
+    "modified": false
+  },
+  {
+    "source": "bench/inference_platform/core.py",
+    "destination": "baselines/inference_platform/core.py",
+    "source_sha256": "7124aecd3f90022db49a0fe9a4565c6924af466cf585a3ea767d8d670d584363",
+    "release_sha256": "7124aecd3f90022db49a0fe9a4565c6924af466cf585a3ea767d8d670d584363",
+    "modified": false
+  },
+  {
+    "source": "bench/inference_platform/provider.py",
+    "destination": "baselines/inference_platform/provider.py",
+    "source_sha256": "ccfdaa7e160976be9c7759a811130c7fd29412bb4e197c076f2dbac43d475e34",
+    "release_sha256": "ccfdaa7e160976be9c7759a811130c7fd29412bb4e197c076f2dbac43d475e34",
+    "modified": false
+  },
+  {
+    "source": "bench/inference_platform/resilience.py",
+    "destination": "baselines/inference_platform/resilience.py",
+    "source_sha256": "a9d9321547128dd8d52fd4e95cab1daab59b471cd61dfb09d1659d6bd5b05a5b",
+    "release_sha256": "a9d9321547128dd8d52fd4e95cab1daab59b471cd61dfb09d1659d6bd5b05a5b",
+    "modified": false
+  },
+  {
+    "source": "bench/inference_platform/api_pool.py",
+    "destination": "baselines/inference_platform/api_pool.py",
+    "source_sha256": "19d0a93d3aa8b33b2938315e3e327f738af38f066475befd7c818efd012a018d",
+    "release_sha256": "19d0a93d3aa8b33b2938315e3e327f738af38f066475befd7c818efd012a018d",
+    "modified": false
+  },
+  {
+    "source": "bench/inference_local/__init__.py",
+    "destination": "baselines/inference_local/__init__.py",
+    "source_sha256": "b451124ab62aca1556a43e922732a56e94695a0b2a1ad0d7572e4241736a456b",
+    "release_sha256": "b451124ab62aca1556a43e922732a56e94695a0b2a1ad0d7572e4241736a456b",
+    "modified": false
+  },
+  {
+    "source": "bench/inference_local/run.py",
+    "destination": "baselines/inference_local/run.py",
+    "source_sha256": "601f9d419804a96c7136cf35fb3de04fadd71eec4c8329d23d78c043569e2d1b",
+    "release_sha256": "601f9d419804a96c7136cf35fb3de04fadd71eec4c8329d23d78c043569e2d1b",
+    "modified": false
+  },
+  {
+    "source": "bench/inference_local/api_pool.py",
+    "destination": "baselines/inference_local/api_pool.py",
+    "source_sha256": "4c85698efa7f988544957bf1d1073d35fff1c425e1858bb137c0f7c31137406d",
+    "release_sha256": "4c85698efa7f988544957bf1d1073d35fff1c425e1858bb137c0f7c31137406d",
+    "modified": false
+  },
+  {
+    "source": "bench/inference_openrouter/__init__.py",
+    "destination": "baselines/inference_openrouter/__init__.py",
+    "source_sha256": "d3738862131f8e58f15201571baaa59f7adc032ea3e10fea51448c0f0a72d13e",
+    "release_sha256": "d3738862131f8e58f15201571baaa59f7adc032ea3e10fea51448c0f0a72d13e",
+    "modified": false
+  },
+  {
+    "source": "bench/inference_openrouter/run.py",
+    "destination": "baselines/inference_openrouter/run.py",
+    "source_sha256": "693428d8fc83e528465d3a3e9ce6431f06771d2bc1794d8f9703e665d288a896",
+    "release_sha256": "195dad6d32c24b4fa1a7da089a098fcc44ca2c322a8f4da8ccb032e507b87d23",
+    "modified": true
+  },
+  {
+    "source": "bench/inference_openrouter/provider.py",
+    "destination": "baselines/inference_openrouter/provider.py",
+    "source_sha256": "fd8ab6dfe2f8a286a976c14df4e89427e2bfe59c604c9894d70d93aca38a78de",
+    "release_sha256": "fd8ab6dfe2f8a286a976c14df4e89427e2bfe59c604c9894d70d93aca38a78de",
+    "modified": false
+  },
+  {
+    "source": "bench/inference_local_models/__init__.py",
+    "destination": "baselines/inference_local_models/__init__.py",
+    "source_sha256": "a2f823123b1fb2e0552306f387615328679429c45be82d62f00ea7ad5e648f49",
+    "release_sha256": "a2f823123b1fb2e0552306f387615328679429c45be82d62f00ea7ad5e648f49",
+    "modified": false
+  },
+  {
+    "source": "bench/inference_local_models/runner.py",
+    "destination": "baselines/inference_local_models/runner.py",
+    "source_sha256": "264d3730f5bb910bef54ec193ec5fe97b2f4f941400f0ab2a21c3bbd0365eb8f",
+    "release_sha256": "264d3730f5bb910bef54ec193ec5fe97b2f4f941400f0ab2a21c3bbd0365eb8f",
+    "modified": false
+  },
+  {
+    "source": "bench/inference_local_models/base.py",
+    "destination": "baselines/inference_local_models/base.py",
+    "source_sha256": "3a4a053c911383a44afd2338916be3d9c258e4026f0a291894644eb7b6636a58",
+    "release_sha256": "3a4a053c911383a44afd2338916be3d9c258e4026f0a291894644eb7b6636a58",
+    "modified": false
+  },
+  {
+    "source": "bench/inference_local_models/qwen35.py",
+    "destination": "baselines/inference_local_models/qwen35.py",
+    "source_sha256": "9093c18c96b36ca35e7d9e237bcd80e43d99e03272c8e1972d00958725f90083",
+    "release_sha256": "5ba6a3bfe38ef520d97a6ec4bf9b52a44cca5f787409903d01c18924f9077b97",
+    "modified": true
+  },
+  {
+    "source": "bench/inference_local_models/registry.py",
+    "destination": "baselines/inference_local_models/registry.py",
+    "source_sha256": "18cc339302ed6a665fe44e9f755408ddba7c822147583a0003ce2daa19500a47",
+    "release_sha256": "18cc339302ed6a665fe44e9f755408ddba7c822147583a0003ce2daa19500a47",
+    "modified": false
+  },
+  {
+    "source": "bench/parser_policy.py",
+    "destination": "baselines/parser_policy.py",
+    "source_sha256": "673295f4fc9b1f12408f0408e3062cb904a6bb947847fe72ba49b51b9319d20b",
+    "release_sha256": "673295f4fc9b1f12408f0408e3062cb904a6bb947847fe72ba49b51b9319d20b",
+    "modified": false
+  },
+  {
+    "source": "bench/inference_platform/tests/test_provider.py",
+    "destination": "baselines/inference_platform/tests/test_provider.py",
+    "source_sha256": "785c5d104d979512ede3b5834290c7b6b128b78d5f9fba1162f87637de606bc9",
+    "release_sha256": "785c5d104d979512ede3b5834290c7b6b128b78d5f9fba1162f87637de606bc9",
+    "modified": false
+  },
+  {
+    "source": "bench/inference_platform/tests/test_resilience.py",
+    "destination": "baselines/inference_platform/tests/test_resilience.py",
+    "source_sha256": "cc6eadee381b70c9125a8cdf71a23b123a3bd3b11ad8f96251c561e19c19ef9d",
+    "release_sha256": "cc6eadee381b70c9125a8cdf71a23b123a3bd3b11ad8f96251c561e19c19ef9d",
+    "modified": false
+  },
+  {
+    "source": "bench/inference_platform/tests/__init__.py",
+    "destination": "baselines/inference_platform/tests/__init__.py",
+    "source_sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "release_sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "modified": false
+  },
+  {
+    "source": "bench/inference_platform/tests/test_worker.py",
+    "destination": "baselines/inference_platform/tests/test_worker.py",
+    "source_sha256": "0a1ff3314da4ebf0737c3ee3afa49652c5c3ef873e0b280f83dec2c2e71b41d4",
+    "release_sha256": "0a1ff3314da4ebf0737c3ee3afa49652c5c3ef873e0b280f83dec2c2e71b41d4",
+    "modified": false
+  },
+  {
+    "source": "bench/inference_platform/tests/test_core.py",
+    "destination": "baselines/inference_platform/tests/test_core.py",
+    "source_sha256": "46a5be5924ededc2af22b3e8936d8265224d63f3417e5f2b0cdafc8ffc5e357b",
+    "release_sha256": "46a5be5924ededc2af22b3e8936d8265224d63f3417e5f2b0cdafc8ffc5e357b",
+    "modified": false
+  },
+  {
+    "source": "RoleSTVG/code/window_generator/models.py",
+    "destination": "scripts/window_generator/models.py",
+    "source_sha256": "34b9ad88695b6f1bc03aa8d2bb591400b2c0e75ab527c693160c15545873d5b9",
+    "release_sha256": "34b9ad88695b6f1bc03aa8d2bb591400b2c0e75ab527c693160c15545873d5b9",
+    "modified": false
+  },
+  {
+    "source": "RoleSTVG/code/window_generator/sources.py",
+    "destination": "scripts/window_generator/sources.py",
+    "source_sha256": "70864fce3592281ef5d2dacbdb38edbac1bc9bfb50333bc977bfe80612d33fb3",
+    "release_sha256": "70864fce3592281ef5d2dacbdb38edbac1bc9bfb50333bc977bfe80612d33fb3",
+    "modified": false
+  },
+  {
+    "source": "RoleSTVG/code/window_generator/generator.py",
+    "destination": "scripts/window_generator/generator.py",
+    "source_sha256": "8c940b8f6c47f29002afe85e14f52d1d92c6e09dae759dcfa0cae03b9c25c049",
+    "release_sha256": "8c940b8f6c47f29002afe85e14f52d1d92c6e09dae759dcfa0cae03b9c25c049",
+    "modified": false
+  },
+  {
+    "source": "RoleSTVG/code/window_generator/quality_control.py",
+    "destination": "scripts/window_generator/quality_control.py",
+    "source_sha256": "71970f85dc01c22755f467ba661464aa9526d0272d497b90fce35ac76ead822b",
+    "release_sha256": "71970f85dc01c22755f467ba661464aa9526d0272d497b90fce35ac76ead822b",
+    "modified": false
+  },
+  {
+    "source": "RoleSTVG/code/window_generator/events.py",
+    "destination": "scripts/window_generator/events.py",
+    "source_sha256": "ca1f01b1cedc2421425fddf7b9fab77e04ade585a1f273b970f34f3cff16aa74",
+    "release_sha256": "ca1f01b1cedc2421425fddf7b9fab77e04ade585a1f273b970f34f3cff16aa74",
+    "modified": false
+  },
+  {
+    "source": "RoleSTVG/code/window_generator/corrections.py",
+    "destination": "scripts/window_generator/corrections.py",
+    "source_sha256": "524d31ea034e4e0271a836f5155d6d0cae3367d7e48322698793ebffe5303f1e",
+    "release_sha256": "524d31ea034e4e0271a836f5155d6d0cae3367d7e48322698793ebffe5303f1e",
+    "modified": false
+  },
+  {
+    "source": "RoleSTVG/code/window_generator/__main__.py",
+    "destination": "scripts/window_generator/__main__.py",
+    "source_sha256": "a284929fd5c29abf6f7fbc506bd298b830375863298a784c4ecf36d005636139",
+    "release_sha256": "74efac4a445eabde521d68168562abbcdd88598e8a13fa8c57bdf3a3a62bcb46",
+    "modified": true
+  },
+  {
+    "source": "RoleSTVG/code/window_generator/__init__.py",
+    "destination": "scripts/window_generator/__init__.py",
+    "source_sha256": "b23200263456415d76bad569f383e4d50da9d81612f6e56a297daab08231917d",
+    "release_sha256": "b23200263456415d76bad569f383e4d50da9d81612f6e56a297daab08231917d",
+    "modified": false
+  },
+  {
+    "source": "RoleSTVG/code/window_generator/windows.py",
+    "destination": "scripts/window_generator/windows.py",
+    "source_sha256": "6738b3b7a1db5c1c0ec8f01624f2f9042c74f3d64dc7d84c9a646b699c83bf5f",
+    "release_sha256": "6738b3b7a1db5c1c0ec8f01624f2f9042c74f3d64dc7d84c9a646b699c83bf5f",
+    "modified": false
+  },
+  {
+    "source": "RoleSTVG/code/window_generator/tests/test_quality_control.py",
+    "destination": "scripts/window_generator/tests/test_quality_control.py",
+    "source_sha256": "b81898c2bb863825d6a98207977d3af279b96464064a6e106375edf95e131fc7",
+    "release_sha256": "b81898c2bb863825d6a98207977d3af279b96464064a6e106375edf95e131fc7",
+    "modified": false
+  },
+  {
+    "source": "RoleSTVG/code/window_generator/tests/test_corrections.py",
+    "destination": "scripts/window_generator/tests/test_corrections.py",
+    "source_sha256": "5ba917db6592d7bf68a8083ae0266f0c0d2a42cab8cd27ea77095258235127dd",
+    "release_sha256": "597d9ef84ec85a69f94d48f819139558b7a3019d54fca4b751df2cf3a8316c27",
+    "modified": true
+  },
+  {
+    "source": "RoleSTVG/code/window_generator/tests/__init__.py",
+    "destination": "scripts/window_generator/tests/__init__.py",
+    "source_sha256": "9a7d63b9b2d4ae94af1357f6f45ab1523010332e13f9dd8297b0f3a1371a274a",
+    "release_sha256": "9a7d63b9b2d4ae94af1357f6f45ab1523010332e13f9dd8297b0f3a1371a274a",
+    "modified": false
+  },
+  {
+    "source": "RoleSTVG/code/window_generator/tests/test_windows.py",
+    "destination": "scripts/window_generator/tests/test_windows.py",
+    "source_sha256": "31a56177fa9f21a47bc70425567d8d1b89a93bf8346b5fa7a7d77769ba5cda9f",
+    "release_sha256": "ad6c76193b775868e28002b376c65ae067eea707f9367c23406905e1f51033af",
+    "modified": true
+  },
+  {
+    "source": "RoleSTVG/code/generate_low_bitrate_contexts.py",
+    "destination": "scripts/generate_low_bitrate_contexts.py",
+    "source_sha256": "10dc11fb79e2dd07f000290cece02109e83c71f6b6ab5d5bf530c644659fce65",
+    "release_sha256": "10dc11fb79e2dd07f000290cece02109e83c71f6b6ab5d5bf530c644659fce65",
+    "modified": false
+  },
+  {
+    "source": "bench/generate_benchmark.py",
+    "destination": "scripts/prompt_format.py",
+    "source_sha256": "120ca6dc2b4860d225ee096ec825c2d9fff5c868904232043c55ea2be9f94931",
+    "modified": true,
+    "change": "Production formatting functions extracted through build_answer; research-only dataset construction omitted.",
+    "release_sha256": "4388badd76003d5a9647dbd9d1c00708c9c0252fbf138fa29c0324400cffd97b"
+  },
+  {
+    "source": "SoccerNet/bench_test/cross_annotation_analysis_v2/summary.md",
+    "destination": "docs/evidence/cross_annotation_summary.md",
+    "source_sha256": "073e837ea745ef470901cfedbf1190c818e3aa58f2142209a543df09cf5649b9",
+    "release_sha256": "073e837ea745ef470901cfedbf1190c818e3aa58f2142209a543df09cf5649b9",
+    "modified": false
+  },
+  {
+    "source": "bench/analysis/main_tables_iclr2027/oracle_1min_scores.csv",
+    "destination": "baselines/results/oracle_1min_scores.csv",
+    "source_sha256": "e88398dc536126f2f027786a466e4bdb7f95b0ed32f1a12e3c398066435067b7",
+    "release_sha256": "e88398dc536126f2f027786a466e4bdb7f95b0ed32f1a12e3c398066435067b7",
+    "modified": false
+  },
+  {
+    "source": "bench/analysis/main_tables_iclr2027/long_context_scores.csv",
+    "destination": "baselines/results/long_context_scores.csv",
+    "source_sha256": "7df021c1ea992a26a766605e3c364f8a4b5bfd596ac38a7b53be0e35b3538442",
+    "release_sha256": "7df021c1ea992a26a766605e3c364f8a4b5bfd596ac38a7b53be0e35b3538442",
+    "modified": false
+  },
+  {
+    "source": "bench/PTD/run_formal.py",
+    "destination": "baselines/ptd/run_formal.py",
+    "source_sha256": "1c753e5c1152c8d230c2ed052cf47cf8a792d474f44f9b96d45e69947764f4e7",
+    "release_sha256": "075d3477ade77ab5f42a0f5d2f1446caf75ee946b8a947d05c8d7914336d2501",
+    "modified": true
+  },
+  {
+    "source": "bench/PTD/eval/adapter.py",
+    "destination": "baselines/ptd/eval/adapter.py",
+    "source_sha256": "6ad37f208d80b6efa6c29173905c3adfd6cd2298bd4f8015fcb1979a539d0ff5",
+    "release_sha256": "6ad37f208d80b6efa6c29173905c3adfd6cd2298bd4f8015fcb1979a539d0ff5",
+    "modified": false
+  },
+  {
+    "source": "bench/PTD/eval/evaluate_ptd.py",
+    "destination": "baselines/ptd/eval/evaluate_ptd.py",
+    "source_sha256": "effdaa227f998f23d17a6d4b088213e0410fae6810b1d8aa39276286531de36e",
+    "release_sha256": "35d2ebce8e02210c2a251388b0b9bfec8b94c830fb3a9a1800dacace3367b68e",
+    "modified": true
+  },
+  {
+    "source": "bench/PTD/policy/protocol.json",
+    "destination": "baselines/ptd/policy/protocol.json",
+    "source_sha256": "e2d9bcae095c9274ec343229dff6eef682a9b9c5d3eed54e0e8495d507540239",
+    "release_sha256": "e49a5317745a59d89bdd5c7c6cec20d369decef59993d76d8a1db04822d68c30",
+    "modified": true
+  },
+  {
+    "source": "bench/PTD/policy/role_query_templates.json",
+    "destination": "baselines/ptd/policy/role_query_templates.json",
+    "source_sha256": "5c6f3ec1350bc1cff6bd1741812ff1eb3cdb9c62d8b69ed4f13665cf86c3a7b5",
+    "release_sha256": "5c6f3ec1350bc1cff6bd1741812ff1eb3cdb9c62d8b69ed4f13665cf86c3a7b5",
+    "modified": false
+  },
+  {
+    "source": "bench/inference_platform/worker.py",
+    "destination": "baselines/inference_platform/worker.py",
+    "source_sha256": "d0d598de4f9a2db222e51b90272c8ed4229d601586c98d8ce9796634f893b6fb",
+    "release_sha256": "d0d598de4f9a2db222e51b90272c8ed4229d601586c98d8ce9796634f893b6fb",
+    "modified": false
+  }
+]

@@ -1,0 +1,236 @@
+[
+  {
+    "model": "openai/gpt-5.6-sol",
+    "setting": "context_1min",
+    "selected_samples": 300,
+    "recorded_start_utc": "2026-09-14T05:24:34.016933+00:00",
+    "protocol": "provider_defaults",
+    "optional_model_facing_parameters_sent": [],
+    "source": "bench/outputs/GPT-5.6-Sol-OpenRouter-US/.runs/1min_context_seed21_detail_omit--openai_gpt-5.6-sol/run.json"
+  },
+  {
+    "model": "openai/gpt-5.6-sol",
+    "setting": "context_3min",
+    "selected_samples": 300,
+    "recorded_start_utc": "2026-09-10T18:08:45.680633+00:00",
+    "protocol": "provider_defaults",
+    "optional_model_facing_parameters_sent": [],
+    "source": "bench/outputs/GPT-5.6-Sol-OpenRouter-US/.runs/3min_context--openai_gpt-5.6-sol/run.json"
+  },
+  {
+    "model": "openai/gpt-5.6-sol",
+    "setting": "oracle",
+    "selected_samples": 3516,
+    "recorded_start_utc": "2026-09-13T08:34:14.136805+00:00",
+    "protocol": "provider_defaults",
+    "optional_model_facing_parameters_sent": [],
+    "source": "bench/outputs/GPT-5.6-Sol-OpenRouter-US/.runs/oracle_seed21_300--openai_gpt-5.6-sol/run.json"
+  },
+  {
+    "model": "openai/gpt-5.6-sol",
+    "setting": "context_1min",
+    "selected_samples": 3516,
+    "recorded_start_utc": "2026-09-10T18:07:42.444095+00:00",
+    "protocol": "provider_defaults",
+    "optional_model_facing_parameters_sent": [],
+    "source": "bench/outputs/GPT-5.6-Sol-OpenRouter-US/.runs/1min_context--openai_gpt-5.6-sol/run.json"
+  },
+  {
+    "model": "openai/gpt-5.6-sol",
+    "setting": "context_10min",
+    "selected_samples": 300,
+    "recorded_start_utc": "2026-09-10T17:17:01.854909+00:00",
+    "protocol": "provider_defaults",
+    "optional_model_facing_parameters_sent": [],
+    "source": "bench/outputs/GPT-5.6-Sol-OpenRouter-US/.runs/10min_context--openai_gpt-5.6-sol/run.json"
+  },
+  {
+    "model": "openai/gpt-5.6-sol",
+    "setting": "context_5min",
+    "selected_samples": 300,
+    "recorded_start_utc": "2026-09-10T18:10:21.744064+00:00",
+    "protocol": "provider_defaults",
+    "optional_model_facing_parameters_sent": [],
+    "source": "bench/outputs/GPT-5.6-Sol-OpenRouter-US/.runs/5min_context--openai_gpt-5.6-sol/run.json"
+  },
+  {
+    "model": "qwen/qwen3.5-9b",
+    "setting": "oracle",
+    "selected_samples": 1,
+    "recorded_start_utc": "2026-09-06T09:29:20.712647+00:00",
+    "protocol": "provider_defaults",
+    "optional_model_facing_parameters_sent": [],
+    "source": "bench/outputs/Qwen3.5-9B-OpenRouter/.runs/probe_oracle--qwen_qwen3.5-9b/run.json"
+  },
+  {
+    "model": "qwen/qwen3.5-9b",
+    "setting": "context_1min",
+    "selected_samples": 1,
+    "recorded_start_utc": "2026-09-06T09:35:00.052516+00:00",
+    "protocol": "provider_defaults",
+    "optional_model_facing_parameters_sent": [],
+    "source": "bench/outputs/Qwen3.5-9B-OpenRouter/.runs/probe_1min--qwen_qwen3.5-9b/run.json"
+  },
+  {
+    "model": "openai/gpt-5.6-sol",
+    "setting": "oracle",
+    "selected_samples": 1,
+    "recorded_start_utc": "2026-09-04T12:17:22.277355+00:00",
+    "protocol": "provider_defaults",
+    "optional_model_facing_parameters_sent": [],
+    "source": "bench/outputs/OpenRouter-GPT-5.6-Sol/.runs/probe_725--openai_gpt-5.6-sol/run.json"
+  },
+  {
+    "model": "openai/gpt-5.6-sol",
+    "setting": "oracle",
+    "selected_samples": 1,
+    "recorded_start_utc": "2026-09-04T12:17:22.231800+00:00",
+    "protocol": "provider_defaults",
+    "optional_model_facing_parameters_sent": [],
+    "source": "bench/outputs/OpenRouter-GPT-5.6-Sol/.runs/probe_700--openai_gpt-5.6-sol/run.json"
+  },
+  {
+    "model": "openai/gpt-5.6-sol",
+    "setting": "oracle",
+    "selected_samples": 1,
+    "recorded_start_utc": "2026-09-04T12:44:00.983564+00:00",
+    "protocol": "provider_defaults",
+    "optional_model_facing_parameters_sent": [],
+    "source": "bench/outputs/OpenRouter-GPT-5.6-Sol/.runs/probe_1200_low--openai_gpt-5.6-sol/run.json"
+  },
+  {
+    "model": "openai/gpt-5.6-sol",
+    "setting": "oracle",
+    "selected_samples": 1,
+    "recorded_start_utc": "2026-09-04T11:59:51.666532+00:00",
+    "protocol": "provider_defaults",
+    "optional_model_facing_parameters_sent": [],
+    "source": "bench/outputs/OpenRouter-GPT-5.6-Sol/.runs/probe_1200--openai_gpt-5.6-sol/run.json"
+  },
+  {
+    "model": "openai/gpt-5.6-sol",
+    "setting": "oracle",
+    "selected_samples": 1,
+    "recorded_start_utc": "2026-09-04T12:12:25.084815+00:00",
+    "protocol": "provider_defaults",
+    "optional_model_facing_parameters_sent": [],
+    "source": "bench/outputs/OpenRouter-GPT-5.6-Sol/.runs/probe_650--openai_gpt-5.6-sol/run.json"
+  },
+  {
+    "model": "openai/gpt-5.6-sol",
+    "setting": "oracle",
+    "selected_samples": 1,
+    "recorded_start_utc": "2026-09-04T12:17:22.286249+00:00",
+    "protocol": "provider_defaults",
+    "optional_model_facing_parameters_sent": [],
+    "source": "bench/outputs/OpenRouter-GPT-5.6-Sol/.runs/probe_720--openai_gpt-5.6-sol/run.json"
+  },
+  {
+    "model": "openai/gpt-5.6-sol",
+    "setting": "oracle",
+    "selected_samples": 1,
+    "recorded_start_utc": "2026-09-04T11:57:38.606105+00:00",
+    "protocol": "provider_defaults",
+    "optional_model_facing_parameters_sent": [],
+    "source": "bench/outputs/OpenRouter-GPT-5.6-Sol/.runs/probe_600--openai_gpt-5.6-sol/run.json"
+  },
+  {
+    "model": "openai/gpt-5.6-sol",
+    "setting": "oracle",
+    "selected_samples": 1,
+    "recorded_start_utc": "2026-09-04T12:20:28.984508+00:00",
+    "protocol": "provider_defaults",
+    "optional_model_facing_parameters_sent": [],
+    "source": "bench/outputs/OpenRouter-GPT-5.6-Sol/.runs/probe_700_retry--openai_gpt-5.6-sol/run.json"
+  },
+  {
+    "model": "openai/gpt-5.6-sol",
+    "setting": "oracle",
+    "selected_samples": 1,
+    "recorded_start_utc": "2026-09-04T11:55:15.210933+00:00",
+    "protocol": "provider_defaults",
+    "optional_model_facing_parameters_sent": [],
+    "source": "bench/outputs/OpenRouter-GPT-5.6-Sol/.runs/probe_120--openai_gpt-5.6-sol/run.json"
+  },
+  {
+    "model": "MiniMax-M3",
+    "setting": "oracle",
+    "selected_samples": 3516,
+    "recorded_start_utc": "2026-08-21T16:32:53.836407+00:00",
+    "protocol": "provider_defaults",
+    "optional_model_facing_parameters_sent": [],
+    "source": "bench/outputs/MiniMax-M3/.runs/oracle--MiniMax-M3/run.json"
+  },
+  {
+    "model": "MiniMax-M3",
+    "setting": "context_1min",
+    "selected_samples": 3516,
+    "recorded_start_utc": "2026-08-23T11:03:36.240005+00:00",
+    "protocol": "provider_defaults",
+    "optional_model_facing_parameters_sent": [],
+    "source": "bench/outputs/MiniMax-M3/.runs/context_1min--MiniMax-M3/run.json"
+  },
+  {
+    "model": "Qwen3.8-Max",
+    "setting": "context_3min",
+    "selected_samples": 1765,
+    "recorded_start_utc": "2026-09-01T10:01:24.415028+00:00",
+    "protocol": "provider_defaults",
+    "optional_model_facing_parameters_sent": [],
+    "source": "bench/outputs/Qwen3.8-Max/.runs/context_3min--Qwen3.8-Max/run.json"
+  },
+  {
+    "model": "Qwen3.8-Max",
+    "setting": "oracle",
+    "selected_samples": 2683,
+    "recorded_start_utc": "2026-08-23T18:25:11.572290+00:00",
+    "protocol": "provider_defaults",
+    "optional_model_facing_parameters_sent": [],
+    "source": "bench/outputs/Qwen3.8-Max/.runs/oracle--Qwen3.8-Max/run.json"
+  },
+  {
+    "model": "Qwen3.8-Max",
+    "setting": "context_1min",
+    "selected_samples": 2439,
+    "recorded_start_utc": "2026-08-24T15:16:29.947350+00:00",
+    "protocol": "provider_defaults",
+    "optional_model_facing_parameters_sent": [],
+    "source": "bench/outputs/Qwen3.8-Max/.runs/context_1min--Qwen3.8-Max/run.json"
+  },
+  {
+    "model": "Qwen3.7-Plus",
+    "setting": "context_1min",
+    "selected_samples": 1240,
+    "recorded_start_utc": "2026-08-24T15:16:29.943332+00:00",
+    "protocol": "provider_defaults",
+    "optional_model_facing_parameters_sent": [],
+    "source": "bench/outputs/Qwen3.7-Plus/.runs/context_1min--Qwen3.7-Plus/run.json"
+  },
+  {
+    "model": "Qwen3.7-Plus",
+    "setting": "oracle",
+    "selected_samples": 1819,
+    "recorded_start_utc": "2026-08-23T18:25:11.560519+00:00",
+    "protocol": "provider_defaults",
+    "optional_model_facing_parameters_sent": [],
+    "source": "bench/outputs/Qwen3.7-Plus/.runs/oracle--Qwen3.7-Plus/run.json"
+  },
+  {
+    "model": "GLM-4.6V",
+    "setting": "oracle",
+    "selected_samples": 3516,
+    "recorded_start_utc": "2026-08-21T16:32:53.779408+00:00",
+    "protocol": "provider_defaults",
+    "optional_model_facing_parameters_sent": [],
+    "source": "bench/outputs/GLM-4.6V/.runs/oracle--GLM-4.6V/run.json"
+  },
+  {
+    "model": "GLM-4.6V",
+    "setting": "context_1min",
+    "selected_samples": 3516,
+    "recorded_start_utc": "2026-08-23T11:03:28.911204+00:00",
+    "protocol": "provider_defaults",
+    "optional_model_facing_parameters_sent": [],
+    "source": "bench/outputs/GLM-4.6V/.runs/context_1min--GLM-4.6V/run.json"
+  }
+]

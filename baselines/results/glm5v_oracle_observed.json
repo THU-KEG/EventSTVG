@@ -1,0 +1,14 @@
+{
+  "model": "GLM-5V-Turbo",
+  "score_type": "measured",
+  "N": 934,
+  "m_vIoU_pct": 9.011062214436215,
+  "R03_pct": 10.171306209850108,
+  "R05_pct": 2.890792291220557,
+  "source": "research/bench/outputs/GLM-5V-Turbo/glm-5v-turbo-sglang-oracle_oracle_0922.jsonl",
+  "source_sha256": "77bb4182938326f0242e43a827846a466746df7d808b1470cb8c19e95cbe107c",
+  "scored_samples": "research/bench/analysis/soccer_oracle_model_study/snapshot_001/per_sample.csv",
+  "scored_samples_sha256": "e5052262a8d9a09a919180abfbdb87992b8aad4bc51797b3d3c96a96f52abe6f",
+  "failures_in_denominator": true,
+  "estimate_used": false
+}

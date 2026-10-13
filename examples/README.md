@@ -1,0 +1,5 @@
+Each setting contains three real target events with their complete stored prompt, answer and original spatial annotation. No video is bundled. The same event IDs occur in all settings. Local provenance paths have been relocated, while prompt/answer/spatial content is retained.
+
+The selected events cover a one-role Goal Kick, a three-role Offside, and a two-role Corner Won. `copy_gt` is a deliberate synthetic prediction copying the answer to validate the scoring interface, not a model baseline. `missing` omits the last sample in file order; `invalid` contains unparseable outputs; `duplicate_retry` puts an invalid attempt before the final GT-copy attempt for each ID. `GLM-4.6V` and `Qwen3.8-Max` contain scored-field extracts of existing real one-minute raw responses.
+
+Run `python scripts/verify_examples.py` from the release root. Reference results are stored in `expected_scores.json`; they are separate from model results and retain fraction units. Annotation examples follow the provisional data license scope; code licensing is undecided.

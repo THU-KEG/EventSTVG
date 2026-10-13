@@ -1,0 +1,37 @@
+{
+  "oracle": {
+    "records": 3516,
+    "unique_ids": 3516,
+    "metadata_sha256": "7386e3fe82a6c06353c2128c5a5af0fcd3207f856fcda07f8371cd7061d639b8",
+    "metadata_bytes": 28153585,
+    "historical_date_shaped_seed_present": true
+  },
+  "context_1min": {
+    "records": 3516,
+    "unique_ids": 3516,
+    "metadata_sha256": "2deb74ac014b46e68638f28fca02c5ec380883fe3885de15d93d5d2d933e6d52",
+    "metadata_bytes": 31695797,
+    "historical_date_shaped_seed_present": true
+  },
+  "context_3min": {
+    "records": 3516,
+    "unique_ids": 3516,
+    "metadata_sha256": "2aacb1f36ec2778bcd858890624e1f8b2b78ca0d9aec4b624c5d20be783ae3c7",
+    "metadata_bytes": 31757692,
+    "historical_date_shaped_seed_present": false
+  },
+  "context_5min": {
+    "records": 3516,
+    "unique_ids": 3516,
+    "metadata_sha256": "b48f6d9f8d41c0a5df1f4559f12c0cca4657101ca18e42f4f1cfe13ec3345f67",
+    "metadata_bytes": 31792697,
+    "historical_date_shaped_seed_present": true
+  },
+  "context_10min": {
+    "records": 3516,
+    "unique_ids": 3516,
+    "metadata_sha256": "c6e35405416a2e37015e89bd5971d55879d3377dc61b6dcc44c6f0bca806ddd6",
+    "metadata_bytes": 31879017,
+    "historical_date_shaped_seed_present": true
+  }
+}
