@@ -10,7 +10,7 @@ This first release contains the **SoccerSTVG football component**: **3,516 targe
 
 ![Current Model Performance on EventSTVG](docs/assets/current_model_performance.png)
 
-*Mean vIoU (%) on the SoccerSTVG football subset: 3,516 events for the 1-minute setting and a matched 300-event subset for the 3-, 5-, and 10-minute settings.*
+*Performance on SoccerSTVG, measured by m-vIoU (%).*
 
 See [baseline protocols and reproduction details](baselines/README.md) and [numerical results](baselines/results/).
 
