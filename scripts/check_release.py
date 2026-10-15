@@ -30,6 +30,11 @@ def payload():
         if path.stat().st_size > 5 * 1024**2:
             issues.append(f"file larger than 5 MiB: {rel}")
             continue
+        if rel == Path("docs/assets/current_model_performance.png"):
+            if not path.read_bytes().startswith(b"\x89PNG\r\n\x1a\n"):
+                issues.append(f"invalid PNG figure: {rel}")
+            files.append(path)
+            continue
         try:
             text = path.read_text(encoding="utf8")
         except UnicodeError:
