@@ -1,10 +1,14 @@
-# EventSTVG
+# Event-STVG: Spatio-Temporal Video Grounding for Long-Form Event Reasoning
+
+[Paper (arXiv:2610.22444)](https://arxiv.org/abs/2610.22444) · [PDF](https://arxiv.org/pdf/2610.22444) · [Code](https://github.com/THU-KEG/EventSTVG) · [Dataset](https://huggingface.co/datasets/zacharyz21/EventSTVG)
+
+Yizhe Zhang, Xujia Wang, Songqi Tang, Xujie Tang, Leo Jiahao Jiang, Jiacheng Wang, Bowen Qu, JinBo Li, Qin Wang, Ji Qi, Lei Hou, Bin Xu, Juanzi Li.
 
 EventSTVG studies **event localization and the spatial grounding of semantic roles** in video. A query identifies an event and its participants by their roles; a prediction localizes the event in time and tracks the same participant for each requested role.
 
 This first release contains the **SoccerSTVG football component**: **3,516 target events from 50 matches**, 17 event types and 16 role types, forming 6,497 event–role instances. Oracle and 1/3/5/10-minute settings share the same event IDs. Together they form 17,580 evaluation instances, not 17,580 distinct events. The multi-domain extension is pending release.
 
-**Dataset:** [zacharyz21/EventSTVG on Hugging Face](https://huggingface.co/datasets/zacharyz21/EventSTVG). Videos and final annotations are maintained there. Dataset access currently requires requesting approval on the HF page and signing in with an approved account. **Paper:** title, authors and public link **TO BE FILLED**.
+**Dataset:** [zacharyz21/EventSTVG on Hugging Face](https://huggingface.co/datasets/zacharyz21/EventSTVG). Videos and final annotations are maintained there. Dataset access currently requires requesting approval on the HF page and signing in with an approved account. The [paper](https://arxiv.org/abs/2610.22444) describes the full benchmark of 4,016 event occurrences across soccer and seven additional domains; the current public release contains the 3,516-event soccer component described above.
 
 ## Current Model Performance on EventSTVG
 
@@ -52,6 +56,22 @@ The official metric implementation is `role_stvg_eval_v1.0`, with frozen parser 
 
 [Annotation documentation](docs/annotation.md) describes the actual human annotation and quality review evidence, with unconfirmed facts listed explicitly. [Baseline documentation](baselines/README.md) covers existing API and local implementations, recorded model aliases, media preprocessing, matched 300-event comparisons, and known reproduction gaps. Scores reproduced from existing responses are distinguished from projected or partial observations.
 
-Citation information is **TO BE FILLED** after the title, author list and publication identifier are confirmed. No speculative BibTeX entry is provided.
+## Citation
+
+If you use Event-STVG, please cite the [paper](https://arxiv.org/abs/2610.22444):
+
+```bibtex
+@misc{zhang2026eventstvgspatiotemporalvideogrounding,
+  title={Event-STVG: Spatio-Temporal Video Grounding for Long-Form Event Reasoning},
+  author={Yizhe Zhang and Xujia Wang and Songqi Tang and Xujie Tang and Leo Jiahao Jiang and Jiacheng Wang and Bowen Qu and JinBo Li and Qin Wang and Ji Qi and Lei Hou and Bin Xu and Juanzi Li},
+  year={2026},
+  eprint={2610.22444},
+  archivePrefix={arXiv},
+  primaryClass={cs.CV},
+  url={https://arxiv.org/abs/2610.22444},
+}
+```
+
+## License
 
 **License:** the existing data-card label **CC BY-NC 4.0** is provisionally retained for newly contributed annotations, subject to confirmation of ownership and scope. SoccerNet match footage and other upstream content retain their own rights and access conditions; this project does not relicense them. Commercial use requires authorization from relevant rights holders. **Code license is undecided** and is not covered by the data-card license. See [LICENSE_SCOPE.md](LICENSE_SCOPE.md).

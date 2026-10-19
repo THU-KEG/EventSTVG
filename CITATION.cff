@@ -1,0 +1,72 @@
+cff-version: 1.2.0
+message: "If you use Event-STVG, please cite the paper below."
+type: software
+title: EventSTVG
+authors:
+  - family-names: Zhang
+    given-names: Yizhe
+  - family-names: Wang
+    given-names: Xujia
+  - family-names: Tang
+    given-names: Songqi
+  - family-names: Tang
+    given-names: Xujie
+  - family-names: Jiang
+    given-names: Leo Jiahao
+  - family-names: Wang
+    given-names: Jiacheng
+  - family-names: Qu
+    given-names: Bowen
+  - family-names: Li
+    given-names: JinBo
+  - family-names: Wang
+    given-names: Qin
+  - family-names: Qi
+    given-names: Ji
+  - family-names: Hou
+    given-names: Lei
+  - family-names: Xu
+    given-names: Bin
+  - family-names: Li
+    given-names: Juanzi
+url: "https://github.com/THU-KEG/EventSTVG"
+repository-code: "https://github.com/THU-KEG/EventSTVG"
+preferred-citation:
+  type: article
+  title: "Event-STVG: Spatio-Temporal Video Grounding for Long-Form Event Reasoning"
+  authors:
+    - family-names: Zhang
+      given-names: Yizhe
+    - family-names: Wang
+      given-names: Xujia
+    - family-names: Tang
+      given-names: Songqi
+    - family-names: Tang
+      given-names: Xujie
+    - family-names: Jiang
+      given-names: Leo Jiahao
+    - family-names: Wang
+      given-names: Jiacheng
+    - family-names: Qu
+      given-names: Bowen
+    - family-names: Li
+      given-names: JinBo
+    - family-names: Wang
+      given-names: Qin
+    - family-names: Qi
+      given-names: Ji
+    - family-names: Hou
+      given-names: Lei
+    - family-names: Xu
+      given-names: Bin
+    - family-names: Li
+      given-names: Juanzi
+  year: 2026
+  journal: arXiv
+  doi: "10.48550/arXiv.2610.22444"
+  url: "https://arxiv.org/abs/2610.22444"
+keywords:
+  - Event-STVG
+  - spatio-temporal video grounding
+  - long-form event reasoning
+  - semantic role grounding
